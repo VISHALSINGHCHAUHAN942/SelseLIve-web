@@ -1,77 +1,193 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;500;700;800&display=swap');
 
- body {
+body {
+  margin: 0;
+  padding: 0;
   background: #899878;
-  overflow-x: hidden;
- }
-
-.landing-page .home {
-  object-fit: contain;
 }
 
-.landing-page .blurry-background {
-   
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    filter: blur(80px);
-  }
-  
-  .landing-page .card {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    border-radius: 20px;
-    transform: translate(-50%, -50%);
-    max-width: 550px;
-    width: 100%;
-    backdrop-filter: blur(50px); /* Adjust the blur amount as needed */
-    background: rgba(255, 246, 246, 0.15);/* Adjust the background color and opacity as needed */
-  }
-  
-  .landing-page .card .card-body {
-    padding: 2rem;
-  }
-  
+.landing-page{
+  background: url('../images/home.png') center/cover no-repeat fixed;
+  background-size:  cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
+.landing-page .card {
+  margin-top: 20%;
+  max-width: 400px;
+  width: 100%;
+  backdrop-filter: blur(50px); 
+  background: rgba(255, 246, 246, 0.15);
+  border-radius: 0.7em;
+}
+
+.landing-page .card .card-body {
+  padding: 2rem;
+}
+
+.landing-page .card .card-text {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #FFF;
+  text-align: justify;
+  font-family: Poppins;
+  font-weight: 700; 
+}
+
+.landing-page .card .btn {
+  background-color: #F58F51; 
+  display: inline-block;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: black; 
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+
+.container .left-part h2 { 
+  color: #000;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.container .left-part p { 
+  color: #FFF;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.container .left-part a { 
+  background: #F58F51; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #FFFFFF;
+  border-radius: 0.5em;
+}
+
+h3 {
+  color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 4rem;
+font-weight: 800;
+margin-top: 2em;
+
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background: url('../images/iot.png') center/cover no-repeat fixed;
+  background-size:  cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.card1 {
+  position: relative;
+  width: 300px;
+  height: 220px;
+  margin: 20px;
+  border-radius: 20px;
+  transition: filter 0.3s ease-in-out;
+  backdrop-filter: blur(50px); 
+  background: rgba(255, 246, 246, 0.15);
+}
+
+.svg-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card1:hover .svg-container {
+  opacity: 1;
+}
+
+.text-container {
+  text-align: center;
+  padding-top: 10px; 
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+
+
+
+/* Small screens (phones) */
+@media only screen and (max-width: 576px) {
+  .landing-page .card {
+    margin-top: 10%;
+    max-width: 300px;
+  }
+
+  .landing-page .card .card-text {
+    font-size: 1rem;
+  }
 
   .landing-page .card .btn {
-    display: block;
-    width: 50%;
-    background-color: #F58F51; 
-    color: black; 
-    text-align: center;
-    text-decoration: none;
-    line-height: normal;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 1.2rem;
-    border: none;
-    width: 150px;
-    height: 40px;
-    border-radius: 0.5rem;
-    padding-top: 0.5em;
+    padding: 0.8rem 1.1rem;
+    font-size: 0.9rem;
   }
-  
 
-  @media (min-width: 576px) {
-    .landing-page .card {
-      left: 5%; /* Adjust the left position as needed for laptop and tablet views */
-      transform: translate(0, -50%);
-    }
+  .container .left-part h2 {
+    font-size: 1rem;  
   }
-  
-  @media (min-width: 768px) {
-    .landing-page .card {
-      left: 10%; /* Adjust the left position as needed for laptop and tablet views */
-      transform: translate(0, -50%);
-    }
+  img {
+    max-width: 90%;
   }
+
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
   
-  @media (max-width: 576px) {
-    .landing-page .card {
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  } 
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  
+}
+
+/* Extra large screens (large desktops) */
+@media only screen and (min-width: 993px) {
+  
+}
+
+/* Landscape mode for small screens */
+@media only screen and (max-width: 576px) and (aspect-ratio: 16/9) {
+  .landing-page .card {
+    margin-top: 10%;
+    max-width: 300px;
+  }
+
+  .landing-page .card .card-text {
+    font-size: 1rem;
+  }
+
+  .landing-page .card .btn {
+    padding: 0.8rem 1.1rem;
+    font-size: 0.9rem;
+  }
+}
