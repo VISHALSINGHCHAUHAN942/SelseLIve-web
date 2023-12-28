@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;500;700;800&display=swap');
 
 body {
@@ -51,13 +50,23 @@ body {
   font-weight: 700;
 }
 
-
-
 .container .left-part h2 { 
   color: #000;
   font-family: Poppins;
   font-size: 3rem;
   font-weight: 800;
+}
+
+.btn-customers{
+  border-radius: 15px;
+  background: #F58F51;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .container .left-part p { 
@@ -84,18 +93,17 @@ font-family: Poppins;
 font-size: 4rem;
 font-weight: 800;
 margin-top: 2em;
-
 }
+
 .card-container {
+  background: url('../images/iot.png') center/cover no-repeat fixed;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px;
-  background: url('../images/iot.png') center/cover no-repeat fixed;
-  background-size:  cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .card1 {
@@ -107,6 +115,37 @@ margin-top: 2em;
   transition: filter 0.3s ease-in-out;
   backdrop-filter: blur(50px); 
   background: rgba(255, 246, 246, 0.15);
+}
+
+.card2 {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  flex-shrink: 0;
+  margin: 20px;
+  border-radius: 20px;
+  transition: filter 0.3s ease-in-out;
+  backdrop-filter: blur(50px); 
+  background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%);
+}
+
+.card-title{
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.card-text{
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .svg-container {
@@ -132,9 +171,6 @@ margin-top: 2em;
   font-weight: 800;
 }
 
-
-
-
 /* Small screens (phones) */
 @media only screen and (max-width: 576px) {
   .landing-page .card {
@@ -157,7 +193,11 @@ margin-top: 2em;
   img {
     max-width: 90%;
   }
-
+  .card-container .card{
+    margin-top: 10%;
+    width: 100px;
+    flex-direction: column;
+  }
 }
 
 /* Medium screens (tablets) */
