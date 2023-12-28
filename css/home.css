@@ -4,7 +4,9 @@ body {
   margin: 0;
   padding: 0;
   background: #899878;
+  overflow-x: hidden;
 }
+
 
 .landing-page{
   background: url('../images/home.png') center/cover no-repeat fixed;
@@ -171,6 +173,38 @@ margin-top: 2em;
   font-weight: 800;
 }
 
+.container-fluid-aboutus{
+  position: relative;
+  left: 3%;
+}
+.container-fluid-aboutus .text-left h6 {
+  color: #FFF;
+text-align: left;
+font-family: Poppins;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+.container-fluid-aboutus .text-left p { 
+  color: #000;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.container-fluid-aboutus .text-left a { 
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: 11px;
+  background: #F58F51;
+}
+
+
+
 /* Small screens (phones) */
 @media only screen and (max-width: 576px) {
   .landing-page .card {
@@ -188,7 +222,7 @@ margin-top: 2em;
   }
 
   .container .left-part h2 {
-    font-size: 1rem;  
+    font-size: 2rem;  
   }
   img {
     max-width: 90%;
@@ -198,11 +232,27 @@ margin-top: 2em;
     width: 100px;
     flex-direction: column;
   }
+
+  .container-fluid-aboutus .text-left p {
+    width: 450px 
+  }
+
+  .container {
+    padding-left: 30px;
+  }
+
+  .container .right-part {
+    padding-left: 30px;
+    padding-top: 30px;
+  }
 }
+
 
 /* Medium screens (tablets) */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  
+  .container {
+    padding-left: 150px;
+  }
 }
 
 /* Large screens (desktops) */
@@ -231,3 +281,4 @@ margin-top: 2em;
     font-size: 0.9rem;
   }
 }
+
