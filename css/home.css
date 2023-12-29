@@ -20,7 +20,7 @@ body {
   margin-top: 20%;
   max-width: 400px;
   width: 100%;
-  backdrop-filter: blur(50px); 
+  backdrop-filter: blur(30px); 
   background: rgba(255, 246, 246, 0.15);
   border-radius: 0.7em;
 }
@@ -52,7 +52,7 @@ body {
   font-weight: 700;
 }
 
-.container .left-part h2 { 
+.container-fluid-1 .left-part h2 { 
   color: #000;
   font-family: Poppins;
   font-size: 3rem;
@@ -71,14 +71,14 @@ body {
   line-height: normal;
 }
 
-.container .left-part p { 
+.container-fluid-1 .left-part p { 
   color: #FFF;
   text-align: justify;
   font-family: Poppins;
   font-size: 1rem;
   font-weight: 500;
 }
-.container .left-part a { 
+.container-fluid-1 .left-part a { 
   background: #F58F51; 
   font-family: 'Poppins';
   font-style: normal;
@@ -86,6 +86,10 @@ body {
   font-size: 1rem;
   color: #FFFFFF;
   border-radius: 0.5em;
+}
+.container-fluid-1 {
+  position: relative;
+  left: 5%;
 }
 
 h3 {
@@ -95,6 +99,7 @@ font-family: Poppins;
 font-size: 4rem;
 font-weight: 800;
 margin-top: 2em;
+
 }
 
 .card-container {
@@ -173,6 +178,7 @@ margin-top: 2em;
   font-weight: 800;
 }
 
+
 .container-fluid-aboutus{
   position: relative;
   left: 3%;
@@ -208,7 +214,7 @@ line-height: normal;
 /* Small screens (phones) */
 @media only screen and (max-width: 576px) {
   .landing-page .card {
-    margin-top: 10%;
+    margin-top: 60%;
     max-width: 300px;
   }
 
@@ -221,7 +227,7 @@ line-height: normal;
     font-size: 0.9rem;
   }
 
-  .container .left-part h2 {
+  .container-fluid-1 .left-part h2 {
     font-size: 2rem;  
   }
   img {
@@ -237,16 +243,52 @@ line-height: normal;
     width: 450px 
   }
 
-  .container {
-    padding-left: 30px;
+  .container-fluid-1 {
+    padding-right: 50px;
   }
 
-  .container .right-part {
+  .container-fluid-1 .right-part {
     padding-left: 30px;
     padding-top: 30px;
   }
+
+  .container-fluid-1 .left-part {
+    padding-left: 30px ;
+  }
+body {
+  overflow-x: hidden;
 }
 
+.container-fluid-aboutus .img-fluid {
+  padding-right: 20px;
+}
+
+.container-fluid-aboutus .text-left p {
+ width: auto;
+}
+
+
+
+
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 400px){
+  h3 {
+    font-size: 2.5rem;
+  }
+  .container-fluid-aboutus .text-left p {
+    width: 355px;
+   }
+   h2 {
+    font-size: 2.5rem;
+   }
+
+   .container-fluid-2 {
+    position: relative;
+    right: 19px; 
+   }
+}
 
 /* Medium screens (tablets) */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -254,6 +296,18 @@ line-height: normal;
     padding-left: 150px;
   }
 }
+
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+  .container1 {
+    position: relative;
+    right: 3%;
+  }
+  .container {
+    position: relative;
+    left: 4%;
+  }
+}
+
 
 /* Large screens (desktops) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
