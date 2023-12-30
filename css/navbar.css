@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;500;700;800&display=swap');
 body {
     margin: 0;
     font-family: 'Poppins';
@@ -44,7 +45,7 @@ body {
 
 .Rectangle1 {
     width: auto;
-    min-width: 120px;
+    min-width: 150px;
     height: 40px;
     background: #F58F51;
     border-radius: 25px;
@@ -52,7 +53,6 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
 }
 
 .RequestADemo {
