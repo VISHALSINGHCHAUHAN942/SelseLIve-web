@@ -1,0 +1,503 @@
+body {
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.navbar {
+    background-color: #7D7D7D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.SenseliveLogo1 {
+    padding-left: 10px;
+    width: 85px;
+    height: 60px;
+}
+
+.Rectangle11 {
+    height: 2px;
+    background: rgba(125, 125, 125, 0.15);
+    margin-top: 15px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.Rectangle1 {
+    width: auto;
+    min-width: 120px;
+    height: 40px;
+    background: #F58F51;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.RequestADemo {
+    color: white;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 5px 0;
+}
+
+.nav-link:hover .dropdown-menu {
+    display: flex;
+    
+}
+
+
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: #7D7D7D;
+    padding: 10px;
+}
+
+.dropdown-menu .nav-link {
+    margin: 10px 0;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.dropdown-menu .nav-link1 {
+    margin: 10px 0;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.dropdown-menu .nav-link2 {
+    margin: 10px 0;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.dropdown-menu .nav-link3 {
+    margin: 10px 0;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* Hamburger Icon for Mobile View */
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    margin-right: 15px;
+    cursor: pointer;
+    order: 2; /* Change order to 2 to position on the right */
+}
+
+/* Add this style for the Solutions mobile dropdown */
+#solutionsDropdown {
+    position: absolute;
+    left: 20%; /* Adjust as needed */
+    height: auto;
+    width: 25rem;
+    background: rgba(125, 125, 125, 0.25);
+    border-radius: 1.875rem;
+    backdrop-filter: blur(29.149999618530273px);
+    display: none;
+}
+
+/* Adjust the position of the dropdown links */
+#solutionsDropdown .nav-link {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+#solutionsDropdown .solution-heading {
+    padding-top: 10px;
+    padding: 5px;
+    color: #F58F51;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#solutionsDropdown .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add this style for the Platform mobile dropdown */
+#platformDropdown {
+    position: absolute;
+    left: 20%; /* Adjust as needed */
+    height: auto; /* Adjust height as needed */
+    width: 35rem;
+    background: rgba(125, 125, 125, 0.25);
+    border-radius: 1.875rem;
+    backdrop-filter: blur(29.149999618530273px);
+    display: none;
+
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+/* Style for the main heading */
+.platform-heading {
+    padding-top: 10px;
+    padding: 5px;
+    color: #F58F51;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Ensure both columns start from the same height */
+#platformDropdown .platform-columninternal {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%; /* Make sure the columns take 100% width */
+}
+
+/* Ensure both columns start from the same height */
+#platformDropdown .platform-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%; /* Make sure the columns take 100% width */
+}
+
+#platformDropdown .nav-link {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+    width: 100%; /* Adjust the width as needed */
+    box-sizing: border-box;
+}
+
+#platformDropdown .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add this style for the Customers mobile dropdown */
+#customersDropdown {
+    position: absolute;
+    left: 40%; /* Adjust as needed */
+    height: auto;
+    width: 15rem;
+    background: rgba(125, 125, 125, 0.25);
+    border-radius: 1.875rem;
+    backdrop-filter: blur(29.149999618530273px);
+    display: none;
+}
+
+/* Adjust the position of the dropdown links */
+#customersDropdown .nav-link {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+#customersDropdown .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add this style for the Resources mobile dropdown */
+#resourcesDropdown {
+    position: absolute;
+    left: 50%; /* Adjust as needed */
+    height: auto;
+    width: 12rem;
+    background: rgba(125, 125, 125, 0.25);
+    border-radius: 1.875rem;
+    backdrop-filter: blur(29.149999618530273px);
+    display: none;
+}
+
+/* Adjust the position of the dropdown links */
+#resourcesDropdown .nav-link {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+#resourcesDropdown .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add this style for the About mobile dropdown */
+#aboutDropdown {
+    position: absolute;
+    left: 60%; /* Adjust as needed */
+    height: auto;
+    width: 10rem;
+    background: rgba(125, 125, 125, 0.25);
+    border-radius: 20px;
+    backdrop-filter: none;
+}
+
+/* Adjust the position of the dropdown links */
+#aboutDropdown .nav-link {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+#aboutDropdown .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.platform-dropdown-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.platform-column {
+    flex: 1;
+    margin-right: 10px; /* Add margin between columns if needed */
+}
+
+
+/* Media Queries for Mobile View */
+@media (max-width: 960px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+    
+
+    /* Center the dropdown items in the middle */
+    .dropdown-container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        z-index: 1; /* Ensure the dropdown is above other elements */
+    }
+
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        align-items: left;
+        padding-left: 20px;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: auto;
+        background-color: #7D7D7D;
+        padding: 10px;
+        z-index: 1; /* Ensure the dropdown is above other elements */
+    }
+
+    /* Show desktop-only button only on desktop */
+    .desktop-only {
+        display: none;
+    }
+
+     /* Add this style for the Solutions mobile dropdown */
+     #solutionsDropdownmobile {
+        position: static; /* Change to static */
+        height: auto;
+        width: 100%;
+        align-items: start;
+        background: rgba(125, 125, 125, 0.25);
+    }
+
+    /* Style for the main heading */
+    #solutionsDropdownmobile .solution-heading1 {
+        color: #F58F51;
+        font-family: Poppins;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #solutionsDropdownmobile .nav-link {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s;
+        text-align: left; /* Align text to the left */
+        padding: 5px 10px; /* Add padding for better readability */
+    }
+
+    #solutionsDropdownmobile .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Add this style for the Platform mobile dropdown */
+    #platformDropdownmobile {
+        position: static; /* Change to static */
+        height: auto;
+        width: 100%;
+        background: rgba(125, 125, 125, 0.25);
+    }
+
+    /* Style for the main heading */
+    .platform-heading1 {
+        padding-top: 10px;
+        color: #F58F51;
+        font-family: Poppins;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    /* Ensure both columns start from the same height */
+    #platformDropdownmobile .platform-columninternal {
+        display: flex;
+        flex-wrap: wrap; /* Allow columns to wrap to the next line */
+        justify-content: space-between;
+    }
+
+    #platformDropdownmobile .platform-column {
+        flex: 1;
+        width: 48%; /* Adjust the width as needed, leave some gap between columns */
+        margin-bottom: 10px; /* Add margin between columns */
+    }
+
+    #platformDropdownmobile .nav-link {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s;
+        text-align: left; /* Align text to the left */
+        padding: 5px 10px; /* Add padding for better readability */
+    }
+
+    #platformDropdownmobile .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Add this style for the Customers mobile dropdown */
+    #customersDropdownmobile {
+        position: static; /* Change to static */
+        height: auto;
+        width: 100%;
+        align-items: start;
+        background: rgba(125, 125, 125, 0.25);
+    }
+
+    /* Adjust the position of the dropdown links */
+    #customersDropdownmobile .nav-link {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s;
+        text-align: left; /* Align text to the left */
+        padding: 5px 10px; /* Add padding for better readability */
+    }
+
+    #customersDropdownmobile .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Add this style for the Resources mobile dropdown */
+    #resourcesDropdownmobile {
+        position: static; /* Change to static */
+        height: auto;
+        width: 100%;
+        align-items: start;
+        background: rgba(125, 125, 125, 0.25);
+    }
+
+    /* Adjust the position of the dropdown links */
+    #resourcesDropdownmobile .nav-link {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s;
+        text-align: left; /* Align text to the left */
+        padding: 5px 10px; /* Add padding for better readability */
+    }
+
+    #resourcesDropdownmobile .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Add this style for the About mobile dropdown */
+    #aboutDropdownmobile {
+        position: static; /* Change to static */
+        height: auto;
+        width: 100%;
+        align-items: start;
+        background: rgba(125, 125, 125, 0.25);
+    }
+
+    /* Adjust the position of the dropdown links */
+    #aboutDropdownmobile .nav-link {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s;
+        text-align: left; /* Align text to the left */
+        padding: 5px 10px; /* Add padding for better readability */
+    }
+
+    #aboutDropdownmobile .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
