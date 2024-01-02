@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+.navbar {
+  position: relative;
+  z-index: 1000; /* Set a high z-index for the navbar */
+}
 
 .flip-card {
   background-color: transparent;
@@ -59,12 +64,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  margin-top: -80px;
+  z-index: 0;
 }
 
 .landing-page .card {
-  margin-top: 20%;
+  margin-top: 35%;
   max-width: 400px;
   width: 100%;
+  z-index: 1;
   backdrop-filter: blur(30px); 
   background: rgba(255, 246, 246, 0.15);
   border-radius: 0.7em;
@@ -225,7 +233,7 @@ margin-top: 2em;
 
 .container-fluid-aboutus{
   position: relative;
-  left: 3%;
+  left: 9%;
 }
 .container-fluid-aboutus .text-left h6 {
   color: #FFF;
@@ -339,7 +347,7 @@ body {
 }
 
 .container-fluid-aboutus .img-fluid {
-  padding-right: 20px;
+  padding-right: 33px;
 }
 
 .container-fluid-aboutus .text-left p {
