@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #899878;
+  background: black;
   overflow-x: hidden;
   
 }
@@ -203,7 +203,7 @@ body {
   
   h1{
     text-align: center;
-    color: #000;
+    color: #F58F51;
     font-family: Poppins;
     font-size: 2.5rem;
     font-style: normal; 
