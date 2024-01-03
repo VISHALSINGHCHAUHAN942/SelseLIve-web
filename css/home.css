@@ -10,7 +10,7 @@ body {
 }
 
 .landing-page {
-  background: url('../part1/home.png');
+  background: url('../images/home.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
