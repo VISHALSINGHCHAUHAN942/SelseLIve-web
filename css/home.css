@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;500;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background: black;
 	font-family: 'Poppins', sans-serif;
 }
 
-.landing-page {
-  background: url('../images/home.png');
-  background-size: cover;
+
+
+.landing-page{
+  background: url('../images/home.png') center/cover no-repeat fixed;
+  background-size:  cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  margin-top: -80px;
+  z-index: 0;
+}
+
+.landing-page .card {
+  margin-top: 35%;
+  max-width: 400px;
   width: 100%;
+  z-index: 1;
   overflow: hidden;
 }
 
@@ -265,8 +279,84 @@ ul{
   .container-fluid-1 .left-part {
     padding-left: 30px;
   }
+body {
+  overflow-x: hidden;
+}
 
-  body {
-    overflow-x: hidden;
+.container-fluid-aboutus .img-fluid {
+  padding-right: 33px;
+}
+
+.container-fluid-aboutus .text-left p {
+ width: auto;
+}
+
+
+
+
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 400px){
+  h3 {
+    font-size: 2.5rem;
+  }
+  .container-fluid-aboutus .text-left p {
+    width: 355px;
+   }
+   h2 {
+    font-size: 2.5rem;
+   }
+
+   .container-fluid-2 {
+    position: relative;
+    right: 19px; 
+   }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding-left: 150px;
   }
 }
+
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+  .container1 {
+    position: relative;
+    right: 3%;
+  }
+  .container {
+    position: relative;
+    left: 4%;
+  }
+}
+
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  
+}
+
+/* Extra large screens (large desktops) */
+@media only screen and (min-width: 993px) {
+  
+}
+
+/* Landscape mode for small screens */
+@media only screen and (max-width: 576px) and (aspect-ratio: 16/9) {
+  .landing-page .card {
+    margin-top: 10%;
+    max-width: 300px;
+  }
+
+  .landing-page .card .card-text {
+    font-size: 1rem;
+  }
+
+  .landing-page .card .btn {
+    padding: 0.8rem 1.1rem;
+    font-size: 0.9rem;
+  }
+}
+

@@ -103,14 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Toggle display for internal dropdowns
-    [solutionsDropdown, customersDropdown, resourcesDropdown, platformDropdown, aboutDropdown].forEach(function (dropdown) {
-        dropdown.addEventListener('click', function (event) {
-            event.stopPropagation(); // Prevent event from reaching the document click handler
-            toggleDropdown(dropdown);
-        });
-    });
-
     // Close dropdowns on window resize
     window.addEventListener('resize', function () {
         [solutionsDropdown, customersDropdown, resourcesDropdown, platformDropdown, aboutDropdown].forEach(function (dropdown) {
