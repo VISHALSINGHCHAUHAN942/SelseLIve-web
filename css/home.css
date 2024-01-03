@@ -1,209 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;500;700;800&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-}
+
 body {
-  margin: 0;
-  padding: 0;
-  background: #899878;
-  overflow-x: hidden;
+  background: black;
+	font-family: 'Poppins', sans-serif;
 }
 
-
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-
-
-.landing-page{
-  background: url('../images/home.png') center/cover no-repeat fixed;
-  background-size:  cover;
+.landing-page {
+  background: url('../images/home.png');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
-.landing-page .card {
-  margin-top: 20%;
-  max-width: 400px;
-  width: 100%;
-  backdrop-filter: blur(30px); 
+.card-1 {
+  margin-top: 10%;
+  max-width: 450px;
+  backdrop-filter: blur(50px);
   background: rgba(255, 246, 246, 0.15);
   border-radius: 0.7em;
 }
 
-.landing-page .card .card-body {
-  padding: 2rem;
-}
-
-.landing-page .card .card-text {
-  font-size: 1.7rem;
+.card-text {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #FFF;
   text-align: justify;
-  font-family: Poppins;
-  font-weight: 700; 
-}
-
-.landing-page .card .btn {
-  background-color: #F58F51; 
-  display: inline-block;
-  padding: 0.9rem 1.2rem;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  color: black; 
-  font-family: Poppins;
-  font-size: 1rem;
-  font-style: normal;
   font-weight: 700;
 }
 
-.container-fluid-1 .left-part h2 { 
-  color: #000;
-  font-family: Poppins;
-  font-size: 3rem;
-  font-weight: 800;
+.btn {
+  background-color: #F58F51;
+  border-radius: 0.5rem;
+  color: black;
+  font-weight: 700;
 }
 
-.btn-customers{
-  border-radius: 15px;
-  background: #F58F51;
-  color: #000;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.container-fluid-1 .left-part p { 
-  color: #FFF;
+.connecting{
   text-align: justify;
-  font-family: Poppins;
-  font-size: 1rem;
-  font-weight: 500;
 }
-.container-fluid-1 .left-part a { 
-  background: #F58F51; 
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #FFFFFF;
-  border-radius: 0.5em;
+.aboutSenseLive{
+  text-align: just;
 }
-.container-fluid-1 {
-  position: relative;
-  left: 5%;
-}
-
-h3 {
-  color: #FFF;
-text-align: center;
-font-family: Poppins;
-font-size: 4rem;
-font-weight: 800;
-margin-top: 2em;
-
-}
-
-.card-container {
-  background: url('../images/iot.png') center/cover no-repeat fixed;
-  min-height: 100vh;
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  box-sizing: border-box;
-}
-
 .card1 {
   position: relative;
   width: 300px;
-  height: 220px;
+  height: 230px;
   margin: 20px;
   border-radius: 20px;
   transition: filter 0.3s ease-in-out;
-  backdrop-filter: blur(50px); 
+  backdrop-filter: blur(50px);
   background: rgba(255, 246, 246, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
 }
 
-.card2 {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  flex-shrink: 0;
-  margin: 20px;
-  border-radius: 20px;
-  transition: filter 0.3s ease-in-out;
-  backdrop-filter: blur(50px); 
-  background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%);
-}
-
-.card-title{
+.Energy {
+  text-align: center;
+  padding-top: 10px;
   color: #FFF;
   text-align: center;
   font-family: Poppins;
-  font-size: 25px;
-  font-style: normal;
+  font-size: 1.2rem;
   font-weight: 800;
-  line-height: normal;
-}
-.card-text{
-  color: #FFF;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
 
 .svg-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-top: 25%;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -213,8 +81,6 @@ margin-top: 2em;
 }
 
 .text-container {
-  text-align: center;
-  padding-top: 10px; 
   color: #FFF;
   text-align: center;
   font-family: Poppins;
@@ -222,104 +88,169 @@ margin-top: 2em;
   font-weight: 800;
 }
 
-
-.container-fluid-aboutus{
-  position: relative;
-  left: 3%;
+.flex-container {
+  width: 70%;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 2em
 }
-.container-fluid-aboutus .text-left h6 {
+
+.card-2 {
+  /* background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%); */
+  background: black;
+  min-height: auto;
+
+}
+
+.card-title2 {
+  padding-top: 35px;
   color: #FFF;
-text-align: left;
-font-family: Poppins;
-font-size: 2.5rem;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-}
-.container-fluid-aboutus .text-left p { 
-  color: #000;
-  text-align: justify;
+  text-align: center;
   font-family: Poppins;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.container-fluid-aboutus .text-left a { 
-  color: #000;
-  font-family: Poppins;
-  font-size: 1.3rem;
-  font-weight: 500;
-  border-radius: 11px;
-  background: #F58F51;
-}
-
-.text-uppercase{
-  color: #F58F51;
-  font-family: Poppins;
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: normal;
 }
 
-.list-un{
-  color: #F58F51;
-  font-family: Poppins;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+.card-body2 {
+  padding: 1rem;
 }
 
-.list-unstyle{
-  color: #F58F51;
+.card-text2 {
+  color: #FFF;
+  text-align: center;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   line-height: normal;
 }
-.a{
-  color: #F58F51;
-}
-.text-center{
-  color: #F58F51;
-}
-.container-fluid-footer{
-  background: #000;
+
+.card-3 {
+  background-color: black;
 }
 
 
-/* Small screens (phones) */
+
+footer{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container2{
+	max-width: 1170px;
+	margin:auto;
+}
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: black;
+    padding: 70px 0;
+    position: relative;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 30px;
+	color: #F58F51;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #F58F51;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li{
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 22px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color: #F58F51;
+	display: block;
+	transition: all 0.3s ease;
+	
+}
+.footer-col ul li a:hover{
+	color: white;
+	padding-left: 5px;
+}
+.footer-col p{
+    color: #F58F51;
+    font-size: 16px;
+}
+.follow .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease; 
+}
+.follow .social-links a:hover{
+	color: #24262b;
+	background-color: white;
+}
+.last {
+    color: #F58F51;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*responsive*/
+@media(max-width: 767px)
+{
+  .footer-col{
+    width: 100%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
 @media only screen and (max-width: 576px) {
-  .landing-page .card {
-    margin-top: 60%;
-    max-width: 300px;
+  .whatsets .h1 {
+    font-size: 2rem;
   }
 
-  .landing-page .card .card-text {
-    font-size: 1rem;
-  }
-
-  .landing-page .card .btn {
-    padding: 0.8rem 1.1rem;
-    font-size: 0.9rem;
-  }
-
-  .container-fluid-1 .left-part h2 {
-    font-size: 2rem;  
-  }
   img {
     max-width: 90%;
-  }
-  .card-container .card{
-    margin-top: 10%;
-    width: 100px;
-    flex-direction: column;
-  }
-
-  .container-fluid-aboutus .text-left p {
-    width: 450px 
   }
 
   .container-fluid-1 {
@@ -332,86 +263,10 @@ line-height: normal;
   }
 
   .container-fluid-1 .left-part {
-    padding-left: 30px ;
-  }
-body {
-  overflow-x: hidden;
-}
-
-.container-fluid-aboutus .img-fluid {
-  padding-right: 20px;
-}
-
-.container-fluid-aboutus .text-left p {
- width: auto;
-}
-
-
-
-
-}
-
-
-@media only screen and (min-width: 300px) and (max-width: 400px){
-  h3 {
-    font-size: 2.5rem;
-  }
-  .container-fluid-aboutus .text-left p {
-    width: 355px;
-   }
-   h2 {
-    font-size: 2.5rem;
-   }
-
-   .container-fluid-2 {
-    position: relative;
-    right: 19px; 
-   }
-}
-
-/* Medium screens (tablets) */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  .container {
-    padding-left: 150px;
-  }
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1024px) {
-  .container1 {
-    position: relative;
-    right: 3%;
-  }
-  .container {
-    position: relative;
-    left: 4%;
-  }
-}
-
-
-/* Large screens (desktops) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  
-}
-
-/* Extra large screens (large desktops) */
-@media only screen and (min-width: 993px) {
-  
-}
-
-/* Landscape mode for small screens */
-@media only screen and (max-width: 576px) and (aspect-ratio: 16/9) {
-  .landing-page .card {
-    margin-top: 10%;
-    max-width: 300px;
+    padding-left: 30px;
   }
 
-  .landing-page .card .card-text {
-    font-size: 1rem;
-  }
-
-  .landing-page .card .btn {
-    padding: 0.8rem 1.1rem;
-    font-size: 0.9rem;
+  body {
+    overflow-x: hidden;
   }
 }
-
