@@ -10,7 +10,6 @@ body {
 }
 
 .container2 {
-	
 	max-width: 1170px;
 	margin: auto;
 }
@@ -29,6 +28,7 @@ ul {
 	padding: 70px 0;
 	position: relative;
 	line-height: 1.5;
+	
 }
 
 .footer-col {
@@ -101,10 +101,10 @@ ul {
 
 .last {
 	color: #F58F51;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	width: 100%;
-	text-align: center;
+	text-align: center;	
 }
 
 /*responsive*/
@@ -120,3 +120,4 @@ ul {
 		width: 100%;
 	}
 }
+

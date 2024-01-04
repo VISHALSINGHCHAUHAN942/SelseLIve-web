@@ -6,13 +6,524 @@ body {
     padding: 0;
    background: #899878;
    overflow-x: hidden;
- 
+
 }
+
+
+.navbar {
+    background: rgba(217, 217, 217, 0.15);
+    opacity: 10px;
+    backdrop-filter: blur(17.5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.SenseliveLogo1 {
+    padding-left: 10px;
+    width: 85px;
+    height: 60px;
+}
+
+.Rectangle11 {
+    height: 2px;
+    background: rgba(125, 125, 125, 0.15);
+    margin-top: 15px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.Rectangle1 {
+    width: auto;
+    min-width: 150px;
+    height: 40px;
+    background: #F58F51;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.RequestADemo {
+    color: white;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 5px 0;
+}
+
+.nav-link:hover .dropdown-menu {
+    display: flex;
+    color: #F58F51;
+}
+
+
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    fill: rgba(255, 246, 246, 0.15);
+    backdrop-filter: blur(26.5px);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    padding: 10px;
+}
+
+.dropdown-menu .nav-link {
+    margin: 10px 0;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.dropdown-menu .nav-link1 {
+    margin: 10px 0;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.dropdown-menu .nav-link2 {
+    margin: 10px 0;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+/* Hamburger Icon for Mobile View */
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    margin-right: 15px;
+    cursor: pointer;
+    order: 2; /* Change order to 2 to position on the right */
+}
+
+/* Add this style for the Solutions mobile dropdown */
+#solutionsDropdown {
+    position: absolute;
+    left: 20%; /* Adjust as needed */
+    height: auto;
+    width: 28rem;
+    background: rgba(66, 66, 66, 0.97);
+    border-radius: 1.875rem;
+    backdrop-filter: blur(30px);
+    z-index: 2;
+}
+
+/* Adjust the position of the dropdown links */
+#solutionsDropdown .nav-link {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+#solutionsDropdown .solution-heading {
+    padding-top: 10px;
+    padding: 5px;
+    color: #F58F51;
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#solutionsDropdown .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add this style for the Platform mobile dropdown */
+#platformDropdown {
+    position: absolute;
+    left: 20%; /* Adjust as needed */
+    height: auto; /* Adjust height as needed */
+    width: 35rem;
+    background: rgba(66, 66, 66, 0.97);
+    border-radius: 1.875rem;
+    backdrop-filter: blur(29.149999618530273px);
+    z-index: inherit;
+
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+/* Style for the main heading */
+.platform-heading {
+    padding-top: 10px;
+    padding: 5px;
+    color: #F58F51;
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Ensure both columns start from the same height */
+#platformDropdown .platform-columninternal {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%; /* Make sure the columns take 100% width */
+}
+
+/* Ensure both columns start from the same height */
+#platformDropdown .platform-column {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%; /* Make sure the columns take 100% width */
+}
+
+#platformDropdown .nav-link {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+    width: 100%; /* Adjust the width as needed */
+    box-sizing: border-box;
+}
+
+#platformDropdown .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add this style for the Customers mobile dropdown */
+#customersDropdown {
+    position: absolute;
+    left: 40%; /* Adjust as needed */
+    height: auto;
+    width: 15rem;
+    background: rgba(66, 66, 66, 0.97);
+    border-radius: 1.875rem;
+    backdrop-filter: blur(29.149999618530273px);
+    z-index: inherit;
+}
+
+/* Adjust the position of the dropdown links */
+#customersDropdown .nav-link {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+#customersDropdown .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add this style for the Resources mobile dropdown */
+#resourcesDropdown {
+    position: absolute;
+    left: 50%; /* Adjust as needed */
+    height: auto;
+    width: 14rem;
+    background: rgba(66, 66, 66, 0.97);
+    border-radius: 1.875rem;
+    backdrop-filter: blur(29.149999618530273px);
+    z-index: inherit;
+}
+
+/* Adjust the position of the dropdown links */
+#resourcesDropdown .nav-link {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+#resourcesDropdown .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add this style for the About mobile dropdown */
+#aboutDropdown {
+    position: absolute;
+    left: 60%; /* Adjust as needed */
+    height: auto;
+    width: 10rem;
+    background: rgba(66, 66, 66, 0.97);
+    border-radius: 20px;
+    backdrop-filter: none;
+}
+
+/* Adjust the position of the dropdown links */
+#aboutDropdown .nav-link {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+#aboutDropdown .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.platform-dropdown-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.platform-column {
+    flex: 1;
+    margin-right: 10px; /* Add margin between columns if needed */
+}
+
+
+/* Media Queries for Mobile View */
+@media (max-width: 960px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+    
+
+    /* Center the dropdown items in the middle */
+    .dropdown-container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        z-index: 1; /* Ensure the dropdown is above other elements */
+    }
+
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        align-items: left;
+        padding-left: 20px;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: auto;
+        background-color:  rgba(37,37,37, 0.97);
+        backdrop-filter: blur(100%);
+        padding: 10px;
+        z-index: 1; /* Ensure the dropdown is above other elements */
+    }
+
+    /* Show desktop-only button only on desktop */
+    .desktop-only {
+        display: none;
+    }
+
+     /* Add this style for the Solutions mobile dropdown */
+     #solutionsDropdownmobile {
+        position: static; /* Change to static */
+        height: auto;
+        width: 100%;
+        align-items: start;
+        background: rgba(125, 125, 125, 0.25);
+    }
+
+    /* Style for the main heading */
+    #solutionsDropdownmobile .solution-heading1 {
+        color: #F58F51;
+        font-family: Poppins;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #solutionsDropdownmobile .nav-link {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s;
+        text-align: left; /* Align text to the left */
+        padding: 5px 10px; /* Add padding for better readability */
+    }
+
+    #solutionsDropdownmobile .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Add this style for the Platform mobile dropdown */
+    #platformDropdownmobile {
+        position: static; /* Change to static */
+        height: auto;
+        width: 100%;
+        background: rgba(125, 125, 125, 0.25);
+    }
+
+    /* Style for the main heading */
+    .platform-heading1 {
+        padding-top: 10px;
+        color: #F58F51;
+        font-family: Poppins;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    /* Ensure both columns start from the same height */
+    #platformDropdownmobile .platform-columninternal {
+        display: flex;
+        flex-wrap: wrap; /* Allow columns to wrap to the next line */
+        justify-content: space-between;
+    }
+
+    #platformDropdownmobile .platform-column {
+        flex: 1;
+        width: 48%; /* Adjust the width as needed, leave some gap between columns */
+        margin-bottom: 10px; /* Add margin between columns */
+    }
+
+    #platformDropdownmobile .nav-link {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s;
+        text-align: left; /* Align text to the left */
+        padding: 5px 10px; /* Add padding for better readability */
+    }
+
+    #platformDropdownmobile .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Add this style for the Customers mobile dropdown */
+    #customersDropdownmobile {
+        position: static; /* Change to static */
+        height: auto;
+        width: 100%;
+        align-items: start;
+        background: rgba(125, 125, 125, 0.25);
+    }
+
+    /* Adjust the position of the dropdown links */
+    #customersDropdownmobile .nav-link {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s;
+        text-align: left; /* Align text to the left */
+        padding: 5px 10px; /* Add padding for better readability */
+    }
+
+    #customersDropdownmobile .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Add this style for the Resources mobile dropdown */
+    #resourcesDropdownmobile {
+        position: static; /* Change to static */
+        height: auto;
+        width: 100%;
+        align-items: start;
+        background: rgba(125, 125, 125, 0.25);
+    }
+
+    /* Adjust the position of the dropdown links */
+    #resourcesDropdownmobile .nav-link {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s;
+        text-align: left; /* Align text to the left */
+        padding: 5px 10px; /* Add padding for better readability */
+    }
+
+    #resourcesDropdownmobile .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Add this style for the About mobile dropdown */
+    #aboutDropdownmobile {
+        position: static; /* Change to static */
+        height: auto;
+        width: 100%;
+        align-items: start;
+        background: rgba(125, 125, 125, 0.25);
+    }
+
+    /* Adjust the position of the dropdown links */
+    #aboutDropdownmobile .nav-link {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s;
+        text-align: left; /* Align text to the left */
+        padding: 5px 10px; /* Add padding for better readability */
+    }
+
+    #aboutDropdownmobile .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+
+    .Rectangle2 {
+    width: 30%;
+    height: 40px;
+    background: #F58F51;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    }
+}
+
+
+
         .hero-section {
             background: url('../images/main.png') center/cover no-repeat;
-            color: #ffffff;
-            padding: 100px 0;
+            padding: 130px 0;
             text-align: center;
+            margin-top: -80px;
+            
         }
 
         .hero-section .container img {
@@ -162,6 +673,9 @@ body {
 
         
         @media only screen and (max-width: 575px) {
+            body {
+                overflow-x: hidden;
+            }
             h1 {
                 font-size: 2.5rem;
             }
@@ -190,7 +704,7 @@ body {
             }
 
             .hero-image {
-                width: fit-content;
+                width: 100%;
                 height: auto;
                 
             }
@@ -234,259 +748,117 @@ body {
         }
        
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-body {
-  margin: 0;
-  padding: 0;
-  background: black;
-  overflow-x: hidden;
-  
-}
-
-.navbar {
-  position: relative;
-  z-index: 1000; /* Set a high z-index for the navbar */
-}
-
-  /* Landing Page Styles */
-.background {
-    background: url('../images/about1\ 1.png') center/cover no-repeat;
-    height: 100vh;
-    width: 100%;
-    margin-top: -80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff; /* Text color on top of the background image */
-  }
-  
-  .text-header {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #FFF;
-  }
-  
-  .text-wrapper {
-    max-width: 80%;
-    margin-top: 20px;
-    font-size: 1.8rem;
-    color: #FFF;
-  }
-
-  
-
-
-  
-  /* "Work With Us" Section Styles */
-  .work-with-us {
-    padding: 50px 0;
-  }
-  
- .row{
-    justify-content: space-evenly;
- }
-
-  .card2 h5 {
-    color: #F58F51;
-  }
-  
-  .btn-customers {
-    background-color: #F58F51;
-    color: #fff;
-  }
-  
-  /* Container for the "Work With Us" section */
-  .work-with-us-container {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .card2 {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    flex-shrink: 0;
-    margin: 20px;
-    border-radius: 20px;
-    transition: filter 0.3s ease-in-out;
-    background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%);
-}
-
-.card2:hover {
-    filter: brightness(1.2); /* Adjust brightness on hover as an example */
-}
-
-.card-title {
-    color: #FFF;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 25px;
-    font-weight: 800;
-    line-height: normal;
-    margin-top: 20px; /* Adjust as needed */
-}
-
-.card-text {
-    color: #FFF;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 16px;
-    font-weight: 300;
-    line-height: normal;
-    margin-top: 10px; /* Adjust as needed */
-}
-
-.container-fluid .img-fluid {
-    width: 53rem;
-    height: 38rem;
-    flex-shrink: 0;
-    border-radius: 2.3125rem 20.03125rem 3.8125rem 4.125rem;
-
-  }
-
-  .container-fluid-why{
-    padding: 5%;
-  }
-
-  .container-fluid-why h2{
-    color: #F58F51;
-    font-family: Poppins;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  .container-fluid-why p{
-    width: 50%;
-    color: #FFF;
-    text-align: justify;
-    font-family: Poppins;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-.text-left h6{
-    color: #F58F51;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-}
-
-.text-left p{
-    color: #fff;
-    text-align: justify;
-    font-family: Poppins;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;;
-}
-
-.text-left a { 
-    color: #000;
-    font-family: Poppins;
-    font-size: 1.3rem;
-    font-weight: 500;
-    border-radius: 11px;
-    background: #F58F51;
-  }
-
-.text-uppercase{
-    color: #F58F51;
-    font-family: Poppins;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  
-  .list-un{
-    color: #F58F51;
-    font-family: Poppins;
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  
-  .list-unstyle{
-    color: #F58F51;
-    font-family: Poppins;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  .a{
-    color: #F58F51;
-  }
-  .text-center{
-    color: #F58F51;
-  }
-  .container-fluid-footer{
-    background: #000;
-  }
-
-
-  /* Media query for smaller screens */
-@media only screen and (max-width: 960px) {
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      .text-header{
-        padding-top: 50px;
-        font-size: 2.5rem;
-    font-weight: bold;
-    color: #FFF;
-      }
-    
-    .text-wrapper {
-    max-width: 80%;
-    margin-top: 50px;
-    font-size: 1rem;
-    color: #FFF;
-  }
-
-    .container-fluid-why {
-      padding: 20px; /* Adjust the padding for smaller screens */
-    }
-  
-    .container-fluid-why h2 {
-      font-size: 1.9rem; /* Adjust the font size for smaller screens */
-    }
-  
-    .container-fluid-why p {
-      width: 100%; /* Full width for smaller screens */
-    }
-
-    .text-left p{
-        padding: 20px;
-    }
-
-    .container-fluid .img-fluid {
-        width: auto;
-        height: auto;
-        flex-shrink: 0;
-        border-radius: 2.3125rem ;
-    
-      }
-    
-  }
+        .container2 {
+            max-width: 1170px;
+            margin: auto;
+            
+        }
+        
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .footer1 {
+            background: black;
+            padding: 70px 0;
+            position: relative;
+            line-height: 1.5;
+            top: 100px;
+        }
+        
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+        
+        .footer-col h4 {
+            font-size: 30px;
+            color: #F58F51;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #F58F51;
+            height: 2px;
+            box-sizing: border-box;
+            width: 100px;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-col ul li a {
+            font-size: 22px;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-weight: 300;
+            color: #F58F51;
+            display: block;
+            transition: all 0.3s ease;
+        
+        }
+        
+        .footer-col ul li a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .footer-col p {
+            color: #F58F51;
+            font-size: 16px;
+        }
+        
+        .follow .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+        
+        .follow .social-links a:hover {
+            color: #24262b;
+            background-color: white;
+        }
+        
+        .last {
+            color: #F58F51;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        /*responsive*/
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media(max-width: 576px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+        
 
