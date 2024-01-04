@@ -17,6 +17,15 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
+
+.bg-image {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: -80px;
+}
 .content{
     color: #FFF;
 text-align: center;

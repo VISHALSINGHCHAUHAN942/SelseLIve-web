@@ -123,6 +123,15 @@ body {
     text-align: left;
 }
 
+.dropdown-menu .nav-link2 a{
+        text-decoration: none; 
+        color: white; 
+}
+
+.dropdown-menu .nav-link1 a{
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+}
 
 /* Hamburger Icon for Mobile View */
 .navbar-toggler {
