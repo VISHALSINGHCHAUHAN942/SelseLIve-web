@@ -9,5 +9,5 @@ document.addEventListener('DOMContentLoaded', function() {
        slides[currentIndex].style.display = 'block';
     }
  
-    setInterval(showNextSlide, 10000); // Change 5000 to the desired time interval in milliseconds (e.g., 5000 for 5 seconds)
+    setInterval(showNextSlide, 10000);
  });
