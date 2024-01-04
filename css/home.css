@@ -140,6 +140,9 @@ h1 {
 .card-3 {
   background-color: black;
 }
+.imageh2 img {
+  border-radius: 10% 35% 35% 35%;
+}
 
 
 
@@ -286,7 +289,7 @@ ul {
   }
 
   img {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .container-fluid-1 {
