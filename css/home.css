@@ -139,124 +139,140 @@ body {
 
 
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+  .landing-page .card {
+    margin-top: 60%;
+    max-width: 300px;
+  }
+}
+
+footer {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container2 {
-	
-	max-width: 1170px;
-	margin: auto;
+
+  max-width: 1170px;
+  margin: auto;
 }
 
 .footer-row {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 .footer1 {
-	background: black;
-	padding: 70px 0;
-	position: relative;
-	line-height: 1.5;
+  background: black;
+  padding: 70px 0;
+  position: relative;
+  line-height: 1.5;
 }
 
 .footer-col {
-	width: 25%;
-	padding: 0 15px;
+  width: 25%;
+  padding: 0 15px;
 }
 
 .footer-col h4 {
-	font-size: 30px;
-	color: #F58F51;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
+  font-size: 30px;
+  color: #F58F51;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
 }
 
 .footer-col h4::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: -10px;
-	background-color: #F58F51;
-	height: 2px;
-	box-sizing: border-box;
-	width: 100px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #F58F51;
+  height: 2px;
+  box-sizing: border-box;
+  width: 100px;
 }
 
 .footer-col ul li {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-col ul li a {
-	font-size: 22px;
-	text-transform: capitalize;
-	text-decoration: none;
-	font-weight: 300;
-	color: #F58F51;
-	display: block;
-	transition: all 0.3s ease;
+  font-size: 22px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #F58F51;
+  display: block;
+  transition: all 0.3s ease;
 
 }
 
 .footer-col ul li a:hover {
-	color: white;
-	padding-left: 5px;
+  color: white;
+  padding-left: 5px;
 }
 
 .footer-col p {
-	color: #F58F51;
-	font-size: 16px;
+  color: #F58F51;
+  font-size: 16px;
 }
 
 .follow .social-links a {
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255, 255, 255, 0.2);
-	margin: 0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
 }
 
 .follow .social-links a:hover {
-	color: #24262b;
-	background-color: white;
+  color: #24262b;
+  background-color: white;
 }
 
 .last {
-	color: #F58F51;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
+  color: #F58F51;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /*responsive*/
 @media(max-width: 767px) {
-	.footer-col {
-		width: 100%;
-		margin-bottom: 30px;
-	}
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 @media(max-width: 574px) {
-	.footer-col {
-		width: 100%;
-	}
+  .footer-col {
+    width: 100%;
+  }
 }
 
 
@@ -282,6 +298,60 @@ ul {
   }
 
   .container-fluid-1 .left-part {
+    padding-left: 30px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container-fluid-aboutus .img-fluid {
+    padding-right: 20px;
+  }
+
+  .container-fluid-aboutus .text-left p {
+    width: 350px;
+  }
+
+  .container .card2 {
+    width: 300px;
+  }
+}
+
+
+
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding-left: 150px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+  .container1 {
+    position: relative;
+    right: 3%;
+  }
+
+  .container {
+    position: relative;
+    left: 4%;
+  }
+}
+
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {}
+
+/* Extra large screens (large desktops) */
+@media only screen and (min-width: 993px) {}
+
+/* Landscape mode for small screens */
+@media only screen and (max-width: 576px) and (aspect-ratio: 16/9) {
+  .landing-page .card {
+    margin-top: 10%;
+    max-width: 300px;
     padding-left: 30px;
   }
 
