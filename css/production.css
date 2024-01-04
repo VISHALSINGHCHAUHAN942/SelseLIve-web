@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;500;700;800&display=swap');
+
+.outer{
+   background-color:#899878;
+   /* padding: 70px; */
+   width: 100%;
+   margin: 0 auto;
+}
+.mainhead{
+    color: #FFFEEA;
+text-align: center;
+font-family: Poppins;
+font-size: 96px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.content{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.btn{
+    border-radius: 21px;
+background: #F58F51;
+text-transform: none;
+color: #FFF;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.heading1{
+    color: #000;
+font-family: Poppins;
+font-size: 96px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding-top: 5px;
+}
+.inner{
+    width: 100%;
+    margin: 0 auto;
+}
+.card{
+    border-radius: 61px;
+background: linear-gradient(223deg, #000 4.66%, #4A4A4A 81.95%);
+}
+.main-heading{
+    color: #FFFEEA;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.sub-heading{
+    color: #FFF;
+text-align: justify;
+font-family: Poppins;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.img-fluid{
+border-radius: 83px;
+width: 500px;
+height:400px;
+}
+.endtext{
+    color: #FFF;
+text-align: justify;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.title{
+    color: #FFF;
+text-align: justify;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+@media only screen and (max-width: 576px) {
+    /* Small screens */
+    .outer{
+        width:100%;
+    }
+    .mainhead {
+        font-size: 48px;
+        font-weight:200;
+    }
+    .content{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .btn{
+        font-size: 10px;
+        font-weight: 150;
+    }
+    .heading1{
+        font-size: 48px;
+        font-weight:200;
+    }
+    .inner{
+        width: 100%;
+    }
+    .card{
+        border-radius: 20px;
+    }
+    .main-heading{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .sub-heading{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .img-fluid{
+        border-radius: 20px;
+        width: 300px;
+        height:200px;
+    }
+    .endtext{
+        font-size: 10px;
+        font-weight:300;
+    }
+    .title{
+        font-size: 5px;
+        font-weight:300;
+    }
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    /* Medium screens */
+    .outer{
+        width:100%;
+    }
+    .mainhead {
+        font-size: 64px;
+        font-weight: 400;
+    }
+    .content{
+        font-size: 25px;
+        font-weight: 200;
+    }
+    .btn{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .heading1{
+        font-size: 64px;
+        font-weight:400;
+    }
+    .inner{
+        width: 100%;
+    }
+    .card{
+        border-radius: 40px;
+    }
+    .main-heading{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .sub-heading{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .img-fluid{
+        border-radius: 30px;
+        width: 400px;
+        height:300px;
+    }
+    .endtext{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .title{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    
+}
+
+@media only screen and (min-width: 993px) {
+    /* Large screens */
+    .outer{
+        width: 100%;
+    }
+    .mainhead {
+        font-size: 96px;
+        font-weight: 700;
+    }
+    .content{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .btn{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .heading1{
+        font-size: 96px;
+        font-weight: 600;
+    }
+    .inner{
+        width: 100%;
+    }
+    .card{
+        border-radius: 61px;
+    }
+    .main-heading{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .sub-heading{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .img-fluid{
+        border-radius: 83px;
+        width: 500px;
+        height:400px;
+    }
+    .endtext{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .title{
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
