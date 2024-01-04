@@ -291,7 +291,7 @@ line-height: normal;
 
 
 /* Small screens (phones) */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
   .landing-page .card {
     margin-top: 60%;
     max-width: 300px;
@@ -343,31 +343,18 @@ body {
 }
 
 .container-fluid-aboutus .text-left p {
- width: auto;
+width: 350px;
+}
+
+.container .card2 {
+  width: 300px;
+}
+
+
 }
 
 
 
-
-}
-
-
-@media only screen and (min-width: 300px) and (max-width: 400px){
-  h3 {
-    font-size: 2.5rem;
-  }
-  .container-fluid-aboutus .text-left p {
-    width: 355px;
-   }
-   h2 {
-    font-size: 2.5rem;
-   }
-
-   .container-fluid-2 {
-    position: relative;
-    right: 19px; 
-   }
-}
 
 /* Medium screens (tablets) */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
