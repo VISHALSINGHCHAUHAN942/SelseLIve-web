@@ -522,6 +522,7 @@ body {
             background: url('../images/main.png') center/cover no-repeat;
             padding: 130px 0;
             text-align: center;
+            margin-top: -80px;
             
         }
 
