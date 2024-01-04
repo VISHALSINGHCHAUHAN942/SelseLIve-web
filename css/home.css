@@ -6,6 +6,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+  font-weight: 700;
+}
+
 .landing-page {
   background: url('../images/home.png');
   background-size: cover;
@@ -136,13 +140,13 @@ body {
 .card-3 {
   background-color: black;
 }
-
-
-
-* {
-  margin: 0;
-  padding: 0;
+.imageh2 img {
+  border-radius: 10% 35% 35% 35%;
 }
+
+
+
+
 
 /* Small screens (phones) */
 @media only screen and (max-width: 600px) {
@@ -285,7 +289,7 @@ ul {
   }
 
   img {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .container-fluid-1 {
