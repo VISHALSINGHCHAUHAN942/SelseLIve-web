@@ -2,7 +2,6 @@
 
 .outer{
    background-color:#899878;
-   /* padding: 70px; */
    width: 100%;
    margin: 0 auto;
 }
@@ -10,7 +9,7 @@
     color: #FFFEEA;
 text-align: center;
 font-family: Poppins;
-font-size: 96px;
+font-size: 70px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -19,7 +18,7 @@ line-height: normal;
     color: #FFF;
 text-align: center;
 font-family: Poppins;
-font-size: 32px;
+font-size: 28px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -34,11 +33,12 @@ font-size: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+border: none;
 }
 .heading1{
     color: #000;
 font-family: Poppins;
-font-size: 96px;
+font-size: 48px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
