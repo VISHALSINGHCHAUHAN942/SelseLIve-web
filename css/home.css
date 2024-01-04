@@ -139,13 +139,14 @@ body {
 }
 
 
-<<<<<<< HEAD
+
 /* Small screens (phones) */
 @media only screen and (max-width: 600px) {
   .landing-page .card {
     margin-top: 60%;
     max-width: 300px;
-=======
+  }
+}
 
 footer{
 	line-height: 1.5;
@@ -258,7 +259,6 @@ ul{
 @media only screen and (max-width: 576px) {
   .whatsets .h1 {
     font-size: 2rem;
->>>>>>> ddff297edcbdb720b7a90354c1d9a99fd8455a6b
   }
 
   img {
@@ -275,7 +275,6 @@ ul{
   }
 
   .container-fluid-1 .left-part {
-<<<<<<< HEAD
     padding-left: 30px ;
   }
 body {
@@ -293,8 +292,6 @@ width: 350px;
 .container .card2 {
   width: 300px;
 }
-
-
 }
 
 
@@ -334,9 +331,8 @@ width: 350px;
   .landing-page .card {
     margin-top: 10%;
     max-width: 300px;
-=======
+
     padding-left: 30px;
->>>>>>> ddff297edcbdb720b7a90354c1d9a99fd8455a6b
   }
 
   body {
