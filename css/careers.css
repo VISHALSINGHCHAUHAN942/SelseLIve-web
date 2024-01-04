@@ -9,9 +9,15 @@ body {
 
 }
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
 .navbar {
-    background: rgba(217, 217, 217, 0.15);
+    background: rgba(125, 125, 125, 0.15);
     opacity: 10px;
     backdrop-filter: blur(17.5px);
     display: flex;
@@ -515,7 +521,6 @@ body {
     cursor: pointer;
     }
 }
-
 
 
         .hero-section {
