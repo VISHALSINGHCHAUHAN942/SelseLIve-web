@@ -56,6 +56,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // Assuming you have a function to toggle the dropdown
+function toggleDropdown() {
+    // Your existing code to toggle the dropdown goes here
+  
+    // Get the hamburger icon element
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+  
+    // Toggle the class to switch between hamburger and cross icons
+    hamburgerIcon.classList.toggle('open');
+  }
+  
+  // Add a click event listener to the hamburger icon
+  document.getElementById('hamburgerIcon').addEventListener('click', toggleDropdown);
+  
+
     // Check on page load
     checkScreenWidth();
 
