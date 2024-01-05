@@ -6,6 +6,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+  font-weight: 700;
+}
+
 .landing-page {
   background: url('../images/home.png');
   background-size: cover;
@@ -142,6 +146,11 @@ body {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 1cd72f9e5475b9d51f61aa5293fd21712ea815ba
 /* Small screens (phones) */
 @media only screen and (max-width: 600px) {
   .landing-page .card {

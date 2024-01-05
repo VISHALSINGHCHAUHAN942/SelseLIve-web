@@ -8,11 +8,21 @@
    margin-bottom: 20px;
    /* margin-top: 200px; */
 }
+
+.bg-image {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: -80px;
+}
+
 .mainhead{
     color: #FFFEEA;
 text-align: center;
 font-family: Poppins;
-font-size: 96px;
+font-size: 70px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -21,7 +31,7 @@ line-height: normal;
     color: #FFF;
 text-align: center;
 font-family: Poppins;
-font-size: 32px;
+font-size: 28px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -36,11 +46,12 @@ font-size: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+border: none;
 }
 .heading1{
     color: #000;
 font-family: Poppins;
-font-size: 96px;
+font-size: 60px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -95,90 +106,6 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
-
-/* .container{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
-.footer{
-	background-color: black;
-    padding: 70px 0;
-    position: relative;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 30px;
-	color: #F58F51;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #F58F51;
-	height: 2px;
-	box-sizing: border-box;
-	width: 100px;
-}
-.footer-col ul li{
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 22px;
-	text-transform: capitalize;
-	text-decoration: none;
-	font-weight: 300;
-	color: #F58F51;
-	display: block;
-	transition: all 0.3s ease;
-	
-}
-.footer-col ul li a:hover{
-	color: #4FFFB0;
-	padding-left: 5px;
-}
-.footer-col p{
-    color: #F58F51;
-    font-size: 16px;
-}
-.follow .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease; 
-}
-.follow .social-links a:hover{
-	color: #24262b;
-	background-color: #4FFFB0;
-}
-.text-center {
-    color: #F58F51;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-} */
-
 
 /* Responsiveness */
 @media only screen and (max-width: 576px) {
@@ -291,367 +218,3 @@ ul{
     
 }
 
-@media only screen and (min-width: 993px) {
-    /* Large screens */
-    .mainhead {
-        font-size: 96px;
-        font-weight: 700;
-    }
-    .content{
-        font-size: 32px;
-        font-weight: 400;
-    }
-    .btn{
-        font-size: 20px;
-        font-weight: 600;
-    }
-    .heading1{
-        font-size: 96px;
-        font-weight: 600;
-    }
-    .card{
-        border-radius: 61px;
-    }
-    .main-heading{
-        font-size: 40px;
-        font-weight: 600;
-    }
-    .sub-heading{
-        font-size: 25px;
-        font-weight: 500;
-    }
-    .img-fluid{
-        border-radius: 83px;
-        width: 500px;
-        height:400px;
-    }
-    .endtext{
-        font-size: 20px;
-        font-weight: 600;
-    }
-    .title{
-        font-size: 15px;
-        font-weight: 500;
-    }
-}
-
-
-
-
-/* .card{ 
-   background: linear-gradient(223deg, #000 4.66%, #4A4A4A 81.95%);
-   border-radius: 61px;
-   padding: 30px;
-}
-.btn{
-background-color:#F58F51;
-color: #FFF;
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-text-transform: none;
-}
-.img-fluid{
-   border-radius: 60px;
-   width: 500px;
-   height:400px;
-}
-
-body{
-   overflow-x: hidden;
-}
-.bg-img{
-   width: 1920px;
-height: 1298px;
-flex-shrink: 0;
-}
-.content{
-   color: #FFF;
-text-align: center;
-font-family: Poppins;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-p{
-   width: 1658px;
-   color: #000;
-font-family: Poppins;
-font-size: 96px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-.img2{
-   height: 60vh;
-   width: 80%;
-}
-.main-heading{
-   color: #FFFEEA;
-   font-family: Poppins;
-   font-size: 40px;
-   font-style: normal;
-   font-weight: 600;
-   line-height: normal;
-   /* margin-top:20px;
-   margin-left:20px; 
-}
-.sub-heading{
-font-size: 25px;
-color:whitesmoke;
-font-weight: 600;
-}
-/* .new-container{
-   background-color:#000;
-   padding: 70px;
-   border-radius: 30px;
-} 
-.card-text{
-   margin-top: 20px;
-   margin-left: 20px;
-}
-.heading1{
-   color: #000;
-font-family: Poppins;
-font-size: 96px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-.heading2{
-   color: #000;
-   font-family: Poppins;
-   font-size: 96px;
-   font-style: normal;
-   font-weight: 600;
-   line-height: normal;
-}
-/* .card .end{
-   background: linear-gradient(to left bottom, #000 4.66%, #4A4A4A 81.95%);
-   border: radius 61px; ;
-} 
-
-.title{
-   color: #FFF;
-text-align: justify;
-font-family: Poppins;
-font-size: 15px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-
-.endtext{
-   color: #FFF;
-   text-align: justify;
-   font-family: Poppins;
-   font-size: 20px;
-   font-style: normal;
-   font-weight: 600;
-   line-height: normal;
-   
-}
-.even{
-   border-radius: 61px;
-background: linear-gradient(223deg, #000 4.66%, #4A4A4A 81.95%);
-}
-
-.last{
-   padding: 30px;
-}
-
-.mainhead{
-   color: #FFFEEA;
-text-align: center;
-font-family: Poppins;
-font-size: 96px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-} */ 
-
-/* .custom-list li {
-   display: inline-block;
-   margin-right: 10px; /* Adjust the spacing between items 
-} */
-
-/* @media (0px <= width <=500px){
-   .main-heading{
-       font-size: 15px;
-   }
-} */
-/* Media query for small screens (up to 768px) */
-/* @media only screen and (max-width: 768px) {
-   body {
-     font-size: 14px;
-   }
- 
-   .container {
-     width: 90%;
-   }
- }
- 
- /* Media query for medium screens (769px to 992px) 
- @media only screen and (min-width: 769px) and (max-width: 992px) {
-   body {
-     font-size: 16px;
-   }
- }
- 
- /* Media query for large screens (993px and above) 
- @media only screen and (min-width: 993px) {
-   body {
-     font-size: 18px;
-   }
- } */
- /* Media query for small screens (up to 576px) */
- /* @media only screen and (max-width: 576px) {
-   .card{
-       padding: 10px;
-   }
-
-   header h1 {
-       font-size: 2rem;
-   }
-
-   header h4 {
-       font-size: 1rem;
-   }
-
-   .btn-outline-light {
-       font-size: 0.8rem;
-   }
-
-   .heading1 {
-       font-size: 2rem;
-   }
-
-   .main-heading {
-       font-size: 1.25rem;
-   }
-
-   .sub-heading {
-       font-size: 0.9rem;
-   }
-
-   .heading2 {
-       font-size: 1.5rem;
-   }
-
-   .endtext {
-       font-size: 0.9rem;
-   }
-
-   .title-head {
-       font-size: 1.1rem;
-   }
-
-
-   .card-text{
-       margin-top: 0px;
-       margin-left: 0px;
-   }
-
-   .title {
-       font-size: 0.8rem;
-   }
-} */
-
-/* Medium screens (577px to 992px) */
-/* @media only screen and (min-width: 577px) and (max-width: 992px) {
-   header h1 {
-       font-size: 2.5rem;
-   }
-
-   header h4 {
-       font-size: 1.25rem;
-   }
-
-   .btn-outline-light {
-       font-size: 1rem;
-   }
-
-   .heading1 {
-       font-size: 2.5rem;
-   }
-
-   .main-heading {
-       font-size: 1.5rem;
-   }
-
-   .sub-heading {
-       font-size: 1rem;
-   }
-
-   .heading2 {
-       font-size: 2rem;
-   }
-
-   .endtext {
-       font-size: 1rem;
-   }
-
-   .title-head {
-       font-size: 1.25rem;
-   }
-
-   .title {
-       font-size: 1rem;
-   }
-
-   .card-text{
-       margin-top: 0px;
-       margin-left: 0px;
-   }
-} */
-
-/* Large screens (993px and above) */
-/* @media only screen and (min-width: 993px) {
-   header h1 {
-       font-size: 3rem;
-   }
-
-   header h4 {
-       font-size: 1.5rem;
-   }
-
-   .btn-outline-light {
-       font-size: 1.25rem;
-   }
-
-   .heading1 {
-       font-size: 3rem;
-   }
-
-   .main-heading {
-       font-size: 1.75rem;
-   }
-
-   .sub-heading {
-       font-size: 1.25rem;
-   }
-
-   .heading2 {
-       font-size: 2.5rem;
-   }
-
-   .endtext {
-       font-size: 1.25rem;
-   }
-
-   .title-head {
-       font-size: 1.5rem;
-   }
-
-   .title {
-       font-size: 1.25rem;
-   }
-   .card-text{
-       margin-top: 0px;
-       margin-left: 0px;
-   }
-
-} */
