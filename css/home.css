@@ -17,6 +17,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  margin-top: -80px;
   width: 100%;
   overflow: hidden;
 }
