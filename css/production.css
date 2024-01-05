@@ -9,11 +9,11 @@
     color: #FFFEEA;
 text-align: center;
 font-family: Poppins;
-font-size: 70px;
-font-style: normal;
+font-size: 60px;
 font-weight: 700;
-line-height: normal;
 }
+
+
 
 .bg-image {
     position: relative;
@@ -45,13 +45,11 @@ font-weight: 600;
 line-height: normal;
 border: none;
 }
-.heading1{
+ .heading1{
     color: #000;
 font-family: Poppins;
-font-size: 48px;
-font-style: normal;
+font-size: 60px;
 font-weight: 600;
-line-height: normal;
 padding-top: 5px;
 }
 .inner{
@@ -205,52 +203,4 @@ line-height: normal;
     
 }
 
-@media only screen and (min-width: 993px) {
-    /* Large screens */
-    .outer{
-        width: 100%;
-    }
-    .mainhead {
-        font-size: 96px;
-        font-weight: 700;
-    }
-    .content{
-        font-size: 32px;
-        font-weight: 400;
-    }
-    .btn{
-        font-size: 20px;
-        font-weight: 600;
-    }
-    .heading1{
-        font-size: 96px;
-        font-weight: 600;
-    }
-    .inner{
-        width: 100%;
-    }
-    .card{
-        border-radius: 61px;
-    }
-    .main-heading{
-        font-size: 40px;
-        font-weight: 600;
-    }
-    .sub-heading{
-        font-size: 25px;
-        font-weight: 500;
-    }
-    .img-fluid{
-        border-radius: 83px;
-        width: 500px;
-        height:400px;
-    }
-    .endtext{
-        font-size: 20px;
-        font-weight: 600;
-    }
-    .title{
-        font-size: 15px;
-        font-weight: 500;
-    }
-}
+
