@@ -39,12 +39,22 @@ h1 {
   font-weight: 700;
 }
 
-.btn {
+.btn1 {
   background-color: #F58F51;
   border-radius: 0.5rem;
   color: black;
   font-weight: 700;
 }
+
+.btn {
+  background-color: #F58F51;
+  border-radius: 0.5rem;
+  color: black;
+  font-weight: 700;
+  position: absolute;
+  bottom: 2rem;
+}
+
 a {
   text-decoration: none;
   color: #FFF;
@@ -83,6 +93,17 @@ a {
   font-size: 1.2rem;
   font-weight: 800;
 }
+
+.container-fluid-iot {
+  background: url('../images/iot.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
 
 .svg-container {
   padding-top: 25%;
@@ -130,6 +151,8 @@ a {
   font-weight: 800;
 }
 
+
+
 .card-body2 {
   padding: 1rem;
 }
@@ -154,19 +177,26 @@ a {
 
 
 
-<<<<<<< HEAD
-=======
 
 
 
 
->>>>>>> a4e09c48db677edc096bf4a7e644abd68bffb01e
 /* Small screens (phones) */
 @media only screen and (max-width: 600px) {
   .landing-page .card {
     margin-top: 60%;
     max-width: 300px;
   }
+}
+
+.container-fluid-iot {
+  background: url('../images/iot.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 footer {
@@ -288,6 +318,17 @@ ul {
 }
 
 @media(max-width: 574px) {
+
+  .container-fluid-iot {
+    background: url('../images/iot.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
   .footer-col {
     width: 100%;
   }
@@ -300,6 +341,16 @@ ul {
 @media only screen and (max-width: 576px) {
   .whatsets .h1 {
     font-size: 2rem;
+  }
+
+  .container-fluid-iot {
+    background: url('../images/iot.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
   }
 
   img {
@@ -344,12 +395,32 @@ ul {
   .container {
     padding-left: 150px;
   }
+
+  .container-fluid-iot {
+    background: url('../images/iot.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1024px) {
   .container1 {
     position: relative;
     right: 3%;
+  }
+
+  .container-fluid-iot {
+    background: url('../images/iot.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
   }
 
   .container {

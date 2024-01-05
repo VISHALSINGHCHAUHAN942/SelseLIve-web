@@ -5,7 +5,7 @@
 }
 
 body {
-  background: black;
+  background: #899878;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -27,14 +27,36 @@ body {
     color: #FFF;
   }
 
-.btn {
+  
+.btn1 {
   background-color: #F58F51;
-  border-radius: 0.5rem;
-  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  color: white;
   font-weight: 700;
+  width: 10%;
+  height: 3rem;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
+
+  .btn {
+    background-color: #F58F51;
+    border-radius: 0.5rem;
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    bottom: 2rem;
 }
 
 
+.btn2 {
+  background-color: #F58F51;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
 
 .connecting{
   text-align: justify;
@@ -115,8 +137,9 @@ body {
 
 .card-2 {
   /* background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%); */
-  background: black;
-  min-height: auto;
+  border-radius: 2rem;
+  background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%);
+  height: 23rem;
 
 }
 
@@ -146,7 +169,7 @@ body {
 }
 
 .card-3 {
-  background-color: black;
+  background-color:#899878;
 }
 
 
@@ -246,6 +269,17 @@ ul{
 /*responsive*/
 @media(max-width: 767px)
 {
+
+  .landing-page {
+    background: url(../images/whitepaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -80px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
   .footer-col{
     width: 100%;
     margin-bottom: 30px;
