@@ -1,158 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap');
 
 body {
-  margin: 0;
-  padding: 0;
   background: #899878;
+  font-family: 'Poppins', sans-serif;
 }
 
-.landing-page{
-  background: url('../images/home.png') center/cover no-repeat fixed;
-  background-size:  cover;
+h1 {
+  font-weight: 700;
+  color: black;
+}
+
+.landing-page {
+  background: url('../images/home.png');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  margin-top: -80px;
+  width: 100%;
+  overflow: hidden;
 }
 
-.landing-page .card {
-  margin-top: 20%;
-  max-width: 400px;
-  width: 100%;
-  backdrop-filter: blur(50px); 
+.card-1 {
+  margin-top: 10%;
+  max-width: 450px;
+  backdrop-filter: blur(50px);
   background: rgba(255, 246, 246, 0.15);
   border-radius: 0.7em;
+  
 }
 
-.landing-page .card .card-body {
-  padding: 2rem;
-}
-
-.landing-page .card .card-text {
-  font-size: 1.7rem;
+.card-text {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #FFF;
   text-align: justify;
-  font-family: Poppins;
-  font-weight: 700; 
-}
-
-.landing-page .card .btn {
-  background-color: #F58F51; 
-  display: inline-block;
-  padding: 0.9rem 1.2rem;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  color: black; 
-  font-family: Poppins;
-  font-size: 1rem;
-  font-style: normal;
   font-weight: 700;
 }
 
-.container .left-part h2 { 
-  color: #000;
-  font-family: Poppins;
-  font-size: 3rem;
-  font-weight: 800;
+.btn1 {
+  background-color: #F58F51;
+  border-radius: 0.5rem;
+  color: black;
+  font-weight: 700;
 }
 
-.btn-customers{
-  border-radius: 15px;
-  background: #F58F51;
-  color: #000;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+.btn {
+  background-color: #F58F51;
+  border-radius: 0.5rem;
+  color: black;
+  font-weight: 700;
+  position: absolute;
+  bottom: 2rem;
 }
 
-.container .left-part p { 
+a {
+  text-decoration: none;
   color: #FFF;
+}
+
+.connecting {
   text-align: justify;
-  font-family: Poppins;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.container .left-part a { 
-  background: #F58F51; 
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #FFFFFF;
-  border-radius: 0.5em;
 }
 
-h3 {
-  color: #FFF;
-text-align: center;
-font-family: Poppins;
-font-size: 4rem;
-font-weight: 800;
-margin-top: 2em;
-}
-
-.card-container {
-  background: url('../images/iot.png') center/cover no-repeat fixed;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.aboutSenseLive {
+  text-align: justify;
 }
 
 .card1 {
   position: relative;
   width: 300px;
-  height: 220px;
+  height: 230px;
   margin: 20px;
   border-radius: 20px;
   transition: filter 0.3s ease-in-out;
-  backdrop-filter: blur(50px); 
+  backdrop-filter: blur(50px);
   background: rgba(255, 246, 246, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
 }
 
-.card2 {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  flex-shrink: 0;
-  margin: 20px;
-  border-radius: 20px;
-  transition: filter 0.3s ease-in-out;
-  backdrop-filter: blur(50px); 
-  background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%);
-}
-
-.card-title{
+.Energy {
+  text-align: center;
+  padding-top: 10px;
   color: #FFF;
   text-align: center;
   font-family: Poppins;
-  font-size: 25px;
-  font-style: normal;
+  font-size: 1.2rem;
   font-weight: 800;
-  line-height: normal;
 }
-.card-text{
-  color: #FFF;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+
+.container-fluid-iot {
+  background: url('../images/iot.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
+
 
 .svg-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-top: 25%;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -162,8 +116,6 @@ margin-top: 2em;
 }
 
 .text-container {
-  text-align: center;
-  padding-top: 10px; 
   color: #FFF;
   text-align: center;
   font-family: Poppins;
@@ -171,63 +123,329 @@ margin-top: 2em;
   font-weight: 800;
 }
 
+.flex-container {
+  width: 70%;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 2em
+}
+
+.card-2 {
+  /* background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%); */
+  border-radius: 31px;
+  background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%);
+  height: 350px;
+  border: none;
+  min-height: 400px;
+
+
+}
+
+.card-title2 {
+  padding-top: 35px;
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+
+
+.card-body2 {
+  padding: 1rem;
+}
+
+.card-text2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+
+}
+
+.card-3 {
+  background-color: #899878;
+  border: none;
+}
+.imageh2 img {
+  border-radius: 10% 35% 35% 35%;
+}
+
+
+
+
+
+
+
 /* Small screens (phones) */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
   .landing-page .card {
-    margin-top: 10%;
+    margin-top: 60%;
     max-width: 300px;
   }
+}
 
-  .landing-page .card .card-text {
-    font-size: 1rem;
-  }
+.container-fluid-iot {
+  background: url('../images/iot.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
 
-  .landing-page .card .btn {
-    padding: 0.8rem 1.1rem;
-    font-size: 0.9rem;
-  }
+footer {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .container .left-part h2 {
-    font-size: 1rem;  
-  }
-  img {
-    max-width: 90%;
-  }
-  .card-container .card{
-    margin-top: 10%;
-    width: 100px;
-    flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container2 {
+
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer1 {
+  background: black;
+  padding: 70px 0;
+  position: relative;
+  line-height: 1.5;
+  top: 100px;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 30px;
+  color: #F58F51;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #F58F51;
+  height: 2px;
+  box-sizing: border-box;
+  width: 100px;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 22px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #F58F51;
+  display: block;
+  transition: all 0.3s ease;
+
+}
+
+.footer-col ul li a:hover {
+  color: white;
+  padding-left: 5px;
+}
+
+.footer-col p {
+  color: #F58F51;
+  font-size: 16px;
+}
+
+.follow .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.follow .social-links a:hover {
+  color: #24262b;
+  background-color: white;
+}
+
+.last {
+  color: #F58F51;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
+
+@media(max-width: 574px) {
+
+  .container-fluid-iot {
+    background: url('../images/iot.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+  .whatsets .h1 {
+    font-size: 2rem;
+  }
+
+  .container-fluid-iot {
+    background: url('../images/iot.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .container-fluid-1 {
+    padding-right: 50px;
+  }
+
+  .container-fluid-1 .right-part1 {
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .container-fluid-1 .left-part {
+    padding-left: 30px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container-fluid-aboutus .img-fluid {
+    padding-right: 20px;
+  }
+
+  .container-fluid-aboutus .text-left p {
+    width: 350px;
+  }
+
+  .container .card2 {
+    width: 300px;
+  }
+}
+
+
+
 
 /* Medium screens (tablets) */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  
+  .container {
+    padding-left: 150px;
+  }
+
+  .container-fluid-iot {
+    background: url('../images/iot.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
 }
+
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+  .container1 {
+    position: relative;
+    right: 3%;
+  }
+
+  .container-fluid-iot {
+    background: url('../images/iot.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    left: 4%;
+  }
+}
+
 
 /* Large screens (desktops) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  
-}
+@media only screen and (min-width: 769px) and (max-width: 992px) {}
 
 /* Extra large screens (large desktops) */
-@media only screen and (min-width: 993px) {
-  
-}
+@media only screen and (min-width: 993px) {}
 
 /* Landscape mode for small screens */
 @media only screen and (max-width: 576px) and (aspect-ratio: 16/9) {
   .landing-page .card {
     margin-top: 10%;
     max-width: 300px;
+    padding-left: 30px;
   }
 
-  .landing-page .card .card-text {
-    font-size: 1rem;
-  }
-
-  .landing-page .card .btn {
-    padding: 0.8rem 1.1rem;
-    font-size: 0.9rem;
+  body {
+    overflow-x: hidden;
   }
 }

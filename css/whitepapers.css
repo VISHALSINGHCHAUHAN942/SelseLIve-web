@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;500;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #899878;
+	font-family: 'Poppins', sans-serif;
+}
+
+.landing-page {
+  background: url('../images/whitepaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -80px;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.text-wrapper {
+    max-width: 80%;
+    margin-top: 20%;
+    font-size: 1.8rem;
+    color: #FFF;
+  }
+
+  
+.btn1 {
+  background-color: #F58F51;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 700;
+  width: 10%;
+  height: 3rem;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
+
+  .btn {
+    background-color: #F58F51;
+    border-radius: 0.5rem;
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    bottom: 2rem;
+}
+
+
+.btn2 {
+  background-color: #F58F51;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.connecting{
+  text-align: justify;
+}
+.aboutSenseLive{
+  text-align: just;
+}
+
+
+.container-fluid-iot {
+    background: url('../images/iot.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .pt-5 {
+    padding-top: 3rem!important;
+    margin-bottom: 5%;
+}
+  
+.card1 {
+  position: relative;
+  width: 300px;
+  height: 230px;
+  margin: 20px;
+  border-radius: 20px;
+  transition: filter 0.3s ease-in-out;
+  backdrop-filter: blur(50px);
+  background: rgba(255, 246, 246, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.Energy {
+  text-align: center;
+  padding-top: 10px;
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.svg-container {
+  padding-top: 25%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card1:hover .svg-container {
+  opacity: 1;
+}
+
+.text-container {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.flex-container {
+  width: 70%;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 2em
+}
+
+.card-2 {
+  /* background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%); */
+  border-radius: 2rem;
+  background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%);
+  height: 23rem;
+
+}
+
+.card-title2 {
+  padding-top: 35px;
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.card-body2 {
+  padding: 1rem;
+}
+
+.card-text2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.card-3 {
+  background-color:#899878;
+}
+
+
+
+footer{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container2{
+	max-width: 1170px;
+	margin:auto;
+}
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: black;
+    padding: 70px 0;
+    position: relative;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 30px;
+	color: #F58F51;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #F58F51;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li{
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 22px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color: #F58F51;
+	display: block;
+	transition: all 0.3s ease;
+	
+}
+.footer-col ul li a:hover{
+	color: white;
+	padding-left: 5px;
+}
+.footer-col p{
+    color: #F58F51;
+    font-size: 16px;
+}
+.follow .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease; 
+}
+.follow .social-links a:hover{
+	color: #24262b;
+	background-color: white;
+}
+.last {
+    color: #F58F51;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*responsive*/
+@media(max-width: 767px)
+{
+
+  .landing-page {
+    background: url(../images/whitepaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -80px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+  .footer-col{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.col {
+  margin-top: 80px;
+  flex: 1 0 0%;
+}
+
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+.col {
+  margin-top: 80px;
+  flex: 1 0 0%;
+}
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  .whatsets .h1 {
+    font-size: 2rem;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  .container-fluid-1 {
+    padding-right: 50px;
+  }
+
+  .col {
+    margin-top: 80px;
+    flex: 1 0 0%;
+}
+
+  .container-fluid-1 .right-part {
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .container-fluid-1 .left-part {
+    padding-left: 30px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
