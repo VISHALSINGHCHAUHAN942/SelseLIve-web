@@ -34,6 +34,8 @@ body {
   font-weight: 700;
 }
 
+
+
 .connecting{
   text-align: justify;
 }
@@ -248,10 +250,20 @@ ul{
     width: 100%;
     margin-bottom: 30px;
 }
+
+.col {
+  margin-top: 80px;
+  flex: 1 0 0%;
+}
+
 }
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
+}
+.col {
+  margin-top: 80px;
+  flex: 1 0 0%;
 }
 }
 
@@ -269,6 +281,11 @@ ul{
   .container-fluid-1 {
     padding-right: 50px;
   }
+
+  .col {
+    margin-top: 80px;
+    flex: 1 0 0%;
+}
 
   .container-fluid-1 .right-part {
     padding-left: 30px;

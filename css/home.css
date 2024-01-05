@@ -17,6 +17,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  margin-top: -80px;
   width: 100%;
   overflow: hidden;
 }
@@ -154,10 +155,13 @@ a {
 
 
 
+<<<<<<< HEAD
+=======
 
 
 
 
+>>>>>>> a4e09c48db677edc096bf4a7e644abd68bffb01e
 /* Small screens (phones) */
 @media only screen and (max-width: 600px) {
   .landing-page .card {
