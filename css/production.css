@@ -43,6 +43,7 @@ font-family: Poppins;
 font-size: 60px;
 font-weight:550;
 margin-left: 7%;
+width:fit-content;
 }
 .inner::after{
     width: 100%;
