@@ -142,6 +142,22 @@ body {
     order: 2; /* Change order to 2 to position on the right */
 }
 
+#hamburgerIcon.open {
+    background-color: transparent; /* Set background color to transparent or adjust as needed */
+  }
+  
+  #hamburgerIcon.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 10px);
+  }
+  
+  #hamburgerIcon.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #hamburgerIcon.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -12px);
+  }
+
 /* Add this style for the Solutions mobile dropdown */
 #solutionsDropdown {
     position: absolute;
