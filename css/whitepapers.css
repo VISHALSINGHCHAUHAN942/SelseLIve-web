@@ -22,7 +22,7 @@ body {
 
 .text-wrapper {
     max-width: 80%;
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 1.8rem;
     color: #FFF;
   }
@@ -52,11 +52,30 @@ body {
 
 .btn2 {
   background-color: #F58F51;
-  border-radius: 0.5rem;
+  border-radius: 0.7rem;
   color: white;
   font-weight: 700;
+  height: 3rem;
+  width: 9rem;
+  line-height: 3rem; /* Set the line-height equal to the button height */
+      display: inline-block;
   text-decoration: none;
+  font-size: 1.5rem;
 }
+
+.btn3 {
+  background-color: #F58F51;
+  border-radius: 0.7rem;
+  color: white;
+  font-weight: 700;
+  height: 3rem;
+  width: 16rem;
+  line-height: 3rem; /* Set the line-height equal to the button height */
+      display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
 
 .connecting{
   text-align: justify;
@@ -170,6 +189,7 @@ body {
 
 .card-3 {
   background-color:#899878;
+  border: none;
 }
 
 
@@ -329,6 +349,12 @@ ul{
   .container-fluid-1 .left-part {
     padding-left: 30px;
   }
+
+  .pt-4 {
+    padding-top: 1.5rem!important;
+    padding: 1rem 1rem;
+    text-align: justify;
+}
 
   body {
     overflow-x: hidden;
