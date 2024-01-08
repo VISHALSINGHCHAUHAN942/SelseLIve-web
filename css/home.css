@@ -50,7 +50,7 @@ h1 {
   color: black;
   font-weight: 700;
   position: absolute;
-  bottom: 2rem;
+  bottom: 25px;
 }
 
 
@@ -134,14 +134,11 @@ a {
 }
 
 .card-2 {
-  /* background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%); */
   border-radius: 31px;
   background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%);
   height: 350px;
   border: none;
   min-height: 400px;
-
-
 }
 
 .card-title2 {
@@ -174,6 +171,7 @@ a {
 }
 .imageh2 img {
   border-radius: 10% 35% 35% 35%;
+  margin-left: 50px;
 }
 
 
@@ -188,6 +186,7 @@ a {
     margin-top: 60%;
     max-width: 300px;
   }
+
 }
 
 .container-fluid-iot {
@@ -310,33 +309,6 @@ ul {
   text-align: center;
 }
 
-/*responsive*/
-@media(max-width: 767px) {
-  .footer-col {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-}
-
-@media(max-width: 574px) {
-
-  .container-fluid-iot {
-    background: url('../images/iot.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .footer-col {
-    width: 100%;
-  }
-}
-
-
-
 
 
 @media only screen and (max-width: 576px) {
@@ -353,9 +325,15 @@ ul {
     width: 100%;
     overflow: hidden;
   }
+  .lastlearn{
+    padding-top: 40px;
+  }
 
   img {
     max-width: 100%;
+  }
+  .imageh2{
+    padding-right: 50px;
   }
 
   .container-fluid-1 {
@@ -387,65 +365,11 @@ ul {
     width: 300px;
   }
 }
+/* Your existing styles for larger screens */
 
-
-
-
-/* Medium screens (tablets) */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  .container {
-    padding-left: 150px;
-  }
-
-  .container-fluid-iot {
-    background: url('../images/iot.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-  }
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1024px) {
-  .container1 {
-    position: relative;
-    right: 3%;
-  }
-
-  .container-fluid-iot {
-    background: url('../images/iot.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .container {
-    position: relative;
-    left: 4%;
-  }
-}
-
-
-/* Large screens (desktops) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {}
-
-/* Extra large screens (large desktops) */
-@media only screen and (min-width: 993px) {}
-
-/* Landscape mode for small screens */
-@media only screen and (max-width: 576px) and (aspect-ratio: 16/9) {
-  .landing-page .card {
-    margin-top: 10%;
-    max-width: 300px;
-    padding-left: 30px;
-  }
-
-  body {
-    overflow-x: hidden;
+/* Hide the Learn More button in mobile and tablet views */
+@media only screen and (max-width: 1400px) {
+  .learnmore {
+    display: none;
   }
 }

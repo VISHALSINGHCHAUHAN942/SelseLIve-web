@@ -530,6 +530,8 @@
     cursor: pointer;
     }
 }
+
+/* Navbar Ends */
 body {
   background: #899878;
 	font-family: 'Poppins', sans-serif;
@@ -544,7 +546,6 @@ body {
     width: 100%;
 
 }
-
 .btn {
     background-color: #F58F51;
     border-radius: 0.5rem;
@@ -552,30 +553,39 @@ body {
     font-weight: 700;
   }
 
-  .card {
+  .card1 {
     position: relative;
     margin: 20px;
     border-radius: 20px;
-    transition: filter 0.3s ease-in-out;
-    backdrop-filter: blur(50px);
-    background: rgba(255, 246, 246, 0.15);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    background: linear-gradient(180deg, black 4%, #4A4A4A 100%);
     margin: 10px;
+    height: 350px;
+    width: auto;
   }
 
 .workwithus{
     padding-top: 20%;
     font-size: 50px;
+    font-weight: 700;
 }
 .iotexperts{
- font-size: 26px;
+ font-size: 24px;
  font-weight: 400;
  word-wrap: break-word
 }
+.whywork{
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+}
+.geta{
+    color: black;
+}
 
+
+
+
+/* Footer */
 * {
 	margin: 0;
 	padding: 0;
@@ -693,3 +703,17 @@ ul {
 		width: 100%;
 	}
 }
+
+
+@media only screen and (max-width: 576px) {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .iotexperts{
+        font-size: 20px;
+    }
+    .workwithus{
+        font-size: 30px;
+    }
+  }
