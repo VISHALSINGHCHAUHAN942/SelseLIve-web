@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <link rel="stylesheet" href="../boot/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/customers.css">
+</head>
+<body>
+    <!--   Navbar Code    -->
+ <div class="navbar">
+  <div class="logo-container">
+    <img class="SenseliveLogo1" src="../images/senselive_logo.png" alt="Logo">
+  </div>
+  <div class="Rectangle11"></div>
+  <div class="nav-links">
+    <div class="nav-link Solutions">
+      Solutions
+      <!-- Solutions dropdown menu -->
+      <div class="dropdown-menu" id="solutionsDropdown">
+        <div class="solution-heading">SenseLive Industry 4.0 Solutions</div>
+        <br>
+        <div class="nav-link2"><a href="#">Energy Management System</a></div>
+        <div class="nav-link2">Real Time Production Productivity Management</div>
+        <div class="nav-link2">Asset and Machine Monitoring</div>
+        <div class="nav-link2"><a href="water.html">Water Management System</a></div>
+        <div class="nav-link2"><a href="predictive.html">Predictive Maintenance</a></div>
+        <div class="nav-link2"><a href="production.html">Production Down Time Analysis</a></div>
+      </div>
+    </div>
+    <!-- Platform dropdown menu -->
+    <div class="nav-link Platform">
+      Platform
+      <div class="dropdown-menu" id="platformDropdown">
+        <!-- Inside the dropdown-menu for Platform -->
+        <div class="platform-heading">
+          SenseLive IoT and AI Platform
+        </div>
+        <br>
+        <div class="platform-columninternal">
+          <!-- First Column -->
+          <div class="platform-column">
+            <div class="nav-link2" style="color: #F58F51;">SenseLive Edge AI Layer</div>
+            <div class="nav-link2">Modsense</div>
+            <div class="nav-link2">Gateway-X</div>
+            <div class="nav-link2">Pulsewave</div>
+            <div class="nav-link2"> </div>
+            <div class="nav-link2"> </div>
+            <div class="nav-link2"> </div>
+          </div>
+          <!-- Second Column -->
+          <div class="platform-column">
+            <div class="nav-link2" style="color: #F58F51;">Industrial IoT Apps</div>
+            <div class="nav-link2">Machine Monitoring</div>
+            <div class="nav-link2">Machine Maintenance</div>
+            <div class="nav-link2">Machine Control</div>
+            <div class="nav-link2">Production Insights</div>
+            <div class="nav-link2">Production Tracking</div>
+            <div class="nav-link2">Custom App</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Customers dropdown menu -->
+    <div class="nav-link Customers">
+      Customers
+      <div class="dropdown-menu" id="customersDropdown">
+        <div class="nav-link2">Customer Case Studies</div>
+        <div class="nav-link2">Customer Overview</div>
+      </div>
+    </div>
+    <!-- Resources dropdown menu -->
+    <div class="nav-link Resources">
+      Resources
+      <div class="dropdown-menu" id="resourcesDropdown">
+        <div class="nav-link2">Blogs</div>
+        <div class="nav-link2">Brochures</div>
+        <div class="nav-link2">On Demand Webinars</div>
+        <div class="nav-link2"><a href="whitePapers.html">White Papers</a></div>
+      </div>
+    </div>
+    <!-- About dropdown menu -->
+    <div class="nav-link About">
+      About
+      <div class="dropdown-menu" id="aboutDropdown">
+        <div class="nav-link2">About Us</div>
+        <div class="nav-link2"><a href="careers.html">Careers</a></div>
+        <div class="nav-link2">Contact Us</div>
+        <div class="nav-link2"><a href="partners.html">Partners</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="Rectangle11"></div>
+  <div class="navbar-toggler" id="hamburgerIcon">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <!-- Container for the dropdown elements -->
+  <div class="dropdown-container">
+    <div class="dropdown-menu" id="dropdownMenu">
+      <div class="nav-link">
+        Solutions
+        <!-- Solutions dropdown menu -->
+        <div class="dropdown-menu" id="solutionsDropdownmobile">
+          <div class="solution-heading1">SenseLive Industry 4.0 Solutions</div>
+          <br>
+          <div class="nav-link1">Energy Management System</div>
+          <div class="nav-link1">Real Time Production Productivity Management</div>
+          <div class="nav-link1">Asset and Machine Monitoring</div>
+          <div class="nav-link1"><a href="water.html">Water Management System</a></div>
+          <div class="nav-link1"><a href="predictive.html">Predictive Maintenance</a></div>
+          <div class="nav-link1"><a href="production.html">Production Down Time Analysis</a></div>
+          <br>
+        </div>
+      </div>
+      <!-- Platform dropdown menu -->
+      <div class="nav-link">
+        Platform
+        <div class="dropdown-menu" id="platformDropdownmobile">
+          <!-- Inside the dropdown-menu for Platform -->
+          <div class="platform-heading1">
+            SenseLive IoT and AI Platform
+          </div>
+          <br>
+          <div class="platform-columninternal">
+            <!-- First Column -->
+            <div class="platform-column">
+              <div class="nav-link1" style="color: #F58F51;">SenseLive Edge AI Layer</div>
+              <div class="nav-link1">Modsense</div>
+              <div class="nav-link1">Gateway-X</div>
+              <div class="nav-link1">Pulsewave</div>
+              <div class="nav-link1"> </div>
+              <div class="nav-link1"> </div>
+              <div class="nav-link1"> </div>
+            </div>
+            <!-- Second Column -->
+            <div class="platform-column">
+              <div class="nav-link1" style="color: #F58F51;">Industrial IoT Apps</div>
+              <br>
+              <div class="nav-link1">Machine Monitoring</div>
+              <div class="nav-link1">Machine Maintenance</div>
+              <div class="nav-link1">Machine Control</div>
+              <div class="nav-link1">Production Insights</div>
+              <div class="nav-link1">Production Tracking</div>
+              <div class="nav-link1">Custom App</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Customers dropdown menu -->
+      <div class="nav-link">
+        Customers
+        <div class="dropdown-menu" id="customersDropdownmobile">
+          <div class="nav-link1">Customer Case Studies</div>
+          <div class="nav-link1">Customer Overview</div>
+          <br>
+        </div>
+      </div>
+      <!-- Resources dropdown menu -->
+      <div class="nav-link">
+        Resources
+        <div class="dropdown-menu" id="resourcesDropdownmobile">
+          <div class="nav-link1">Blogs</div>
+          <div class="nav-link1">Brochures</div>
+          <div class="nav-link1">On Demand Webinars</div>
+          <div class="nav-link1"><a href="whitePapers.html">White Papers</a></div>
+          <br>
+        </div>
+      </div>
+      <!-- About dropdown menu -->
+      <div class="nav-link">
+        About
+        <div class="dropdown-menu" id="aboutDropdownmobile">
+          <div class="nav-link1">About Us</div>
+          <div class="nav-link1"><a href="careers.html">Careers</a></div>
+          <div class="nav-link1">Contact Us</div>
+          <div class="nav-link1"><a href="partners.html">Partners</a></div>
+          <br>
+        </div>
+      </div>
+      <!-- Request a Demo button inside the dropdown -->
+      <div class="Rectangle1" id="dropdownToggle">
+        <div class="RequestADemo">Request a Demo</div>
+      </div>
+    </div>
+  </div>
+  <!-- Request a Demo button outside the dropdown -->
+  <div class="Rectangle1 desktop-only" id="desktopToggle">
+    <div class="RequestADemo">Request a Demo</div>
+  </div>
+
+  <!-- Include the external script -->
+  <script src="../js/navbar.js"></script>
+</div>
+<!--  NAvbar Ends     -->
+
+
+   <section class="container-fluid landing-page background">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="d-flex flex-column align-items-center justify-content-center text-center">
+          <div class="label">
+            <div class="text-header">Customers</div>
+          </div>
+          <p class="text-wrapper">
+            SenseLive helps customers to drive their industrial IoT transformation and deliver innovative products to the market. Our platform is based on the continuous feedback we receive from our customers across many industries operating on global markets.
+          </p>
+          <br>
+          <br>
+          <a href="#" class="btn-customer">Request a Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+        <div class="label">
+            <div class="text-header1" style="color: #000000;">Customer Quotes</div>
+          </div>
+        <p class="text-wrapper1" style="color: #000000;">
+See what our customer tell's about us;
+        </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row mt-5 g-5 customer-card">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <img src="../images/ceat.png" alt="Ceat" class="img-fluid" style="background-color:#203F99 ;">
+                    </div>
+                    <div class="col-md-9">
+                        <p class="text">SenseLive's customers in the manufacturing industry benefit from increased operational efficiency, reduced downtime, and data-driven.</p>
+                    </div>
+                </div>
+                
+                <div class="row mt-5 g-5 customer-card">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <img src="../images/coal.png" alt="Coal" class="img-fluid" style="background-color:#FFFEEA ;">
+                    </div>
+                    <div class="col-md-9">
+                        <p class="text">At Coal India, we successfully implemented SenseLive's Water Management System, allowing us to capture water data from multiple sites without the need for extensive wiring. This data is seamlessly displayed at our headquarters, enhancing our water management capabilities and overall efficiency.</p>
+                    </div>
+                </div>
+
+                <div class="row mt-5 g-5 customer-card">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <img src="../images/kapilansh.jpg" alt="kapilansh" class="img-fluid" style="background-color: #FFF;">
+                    </div>
+                    <div class="col-md-9">
+                        <p class="text">Salasar Alloy and Steel Industries Pvt. Ltd. has greatly benefited from SenseLive's Industry-specific solutions tailored to our unique company culture. The dashboards provided are Incredibly user-friendly, and they encompass all the crucial Key Performance Indicators (KPIs), making data analysis and decision-making a breeze.</p>
+                    </div>
+                </div>
+
+                <div class="row mt-5 g-5 customer-card">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <img src="../images/elkem.png" alt="Elkem" class="img-fluid"  style="background-color: #FFF;">
+                    </div>
+                    <div class="col-md-9">
+                        <p class="text">Working with SenseLive on various Industry 4.0 and plant digitization projects has been a remarkable experience. Their team is highly dynamic and professional, and the solutions they deliver are of top-notch quality. Moreover, they are always open to feedback, making it a collaborative and successful partnership.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section>
+    <div class="container-fluid-card">
+        <div class="row">
+            <div class="row mt-5 g-5 customer-card-fluid">
+                <div class="col-md-8 text-center">
+                    <img src="../images/ceat.png" alt="Ceat" class="img-fluid" style="background-color:#203F99 ;">
+                </div>
+                <div class="row-md-3">
+                    <h3>CEAT TYRES</h3>
+                    <p class="text">Cavi Elettrici e Affini Torino, commonly known by the abbreviation CEAT, is the flagship company of RPG Group.</p>
+                </div>
+            </div>
+            
+            
+            <div class="row mt-5 g-5 customer-card-fluid">
+                <div class="col-md-8 text-center">
+                    <img src="../images/kapilansh.jpg" alt="kapilansh" class="img-fluid" style="background-color: #FFF;">
+                </div>
+                <div class="row-md-3">
+                    <h3>KAPILANSH</h3>
+                    <p class="text">Kapilansh Dhatu Udyog Pvt. Ltd. is the leading and established name in India as manufacturers of centrifugally cast iron pipes and fittings.</p>
+                </div>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="row mt-5 g-5 customer-card-fluid">
+                <div class="col-md-8 text-center">
+                    <img src="../images/coal.png" alt="Coal" class="img-fluid" style="background-color:#FFFEEA ;">
+                </div>
+                <div class="row-md-3">
+                    <h3>COAL INDIA</h3>
+                    <p class="text">Coal India Limited (CIL) is an Indian central public sector undertaking under the ownership of the Ministry of Coal, Government of India.</p>
+                </div>
+            </div>
+            <div class="row mt-5 g-5 customer-card-fluid">
+                <div class="col-md-8 text-center">
+                    <img src="../images/elkem.png" alt="Elkem" class="img-fluid"  style="background-color: #FFF;">
+                </div>
+                <div class="row-md-3">
+                    <h3>ELKEM</h3>
+                    <p class="text">Elkem is one of the world's leading providers of advanced silicon-based materials shaping a better and more sustainable future.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+        <h1>Case  Studies</h1>
+    </div>
+    <div class="row">
+        <div class="card2 col-sm-12 col-lg-3 col-md-4  d-flex align-items-center justify-content-center">
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="row-md-3">
+                <img src="../images/case1.jpg" alt="Elkem" class="img-fluid1" >
+            </div>
+            <p class="card-text my-3">
+                Optimizing Operator Input Downtime Data with Downtime Reports
+            </p>
+            <a href="#" class="btn btn-customers my-3">Watch Our Case Stories</a>
+          </div>
+        </div>
+        <div class="card2 col-sm-12 col-lg-3 col-md-4  d-flex align-items-center justify-content-center">
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="row-md-3">
+                <img src="../images/case2.jpg" alt="Elkem" class="img-fluid1">
+            </div>
+            <p class="card-text my-3">
+                Downtime Tracking and Analysis – Discover What’s Truly Unfolding on the Shop Floor
+            </p>
+            <a href="#" class="btn btn-customers my-3">Watch Our Case Stories</a>
+          </div>
+        </div>
+        <div class="card2 col-sm-12 col-lg-3 col-md-4  d-flex align-items-center justify-content-center ">
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="row-md-3">
+                <img src="../images/case3.jpg" alt="Elkem" class="img-fluid1">
+            </div>
+            <p class="card-text my-3">
+                Elevating Productivity with OEE: Ushering Traditional Industries into the Era of Smart Manufacturing.
+            </p>
+            <a href="#" class="btn btn-customers my-3">Watch Our Case Stories</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!--Footer starts-->
+  
+  <section class="container-fluid-footer mt-5">
+    <footer class="bg-body-tertiary text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 py-5">
+            <h5 class="text-uppercase">Quick Links</h5>
+
+            <p class="list-un mb-0 py-4">
+              <a>Home</a>
+              <br><a>Solution</a>
+              <br><a>Platform</a>
+              <br><a>Customers</a>
+              <br><a>About Us</a>
+            </p>
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 py-5">
+            <h5 class="text-uppercase mb-0">Resources</h5>
+    
+            <p class="list-un py-4">
+              <a>Blogs</a><br>
+              <a>White Paper</a><br>
+              <a>Brochure</a><br>
+              <a>Case Studies</a>  
+            </p>
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 py-5">
+            <h5 class="text-uppercase">Address</h5>
+    
+              <p class="list-unstyle mb-0 py-4">
+                  GHR Technology <br>
+                  Business Incubation, <br> 
+                  GHRCE, CRPF, Digdoh Hills <br>
+                  Nagpur - 444106 <br>
+                  Maharashtra
+                </p>
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 py-5">
+            <h5 class="text-uppercase mb-0">Contact Us</h5>
+    
+          <p class="list-unstyle py-4">
+              Contact us if need help with anything
+              <br>info.senselive@gmail.com
+              <br>2019 © SenseLive, All Rights Reserved
+          </p>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center"> 
+      <a>Powered by SenseLive Technologies</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
+  </section>
+
+  <!--Footer Ends-->
+
+</body>
+</html>
