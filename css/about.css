@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;500;700;800&display=swap');
+
+.header h3 {
+    color: #FFFEEA;
+    font-family: Poppins;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: -32px;
+}
+
+.header p {
+    color: #D9D9D9;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 15px 13px;
+}
+
+.header .btn {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #f58f51;
+    border: 1px solid #f58f51;
+    text-transform: none;
+    padding: 5px 13px;
+    border-radius: 15px;
+}
+
+.header .text-white {
+    color: #fff;
+    margin-top: 215px;
+}
+
+body {
+    background: #899878;
+    overflow-x: hidden;
+}
+
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    margin: 20px;
+    border-radius: 20px;
+    transition: filter 0.3s ease-in-out;
+    backdrop-filter: blur(50px);
+    background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%);
+}
+
+.card-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.card-text {
+    color: #FFF;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    margin-top: 85px;
+}
+
+.btn-customers {
+    border-radius: 15px;
+    background: #F58F51;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 155px;
+    text-align: center;
+}
+
+
+.msg {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 45px;
+    position: relative;
+    padding: 0px 130px;
+}
+
+
+/* timeline */
+/* .section .box{
+    background: #fff;
+    width: 110vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.section h1{
+    font-size: 1.9rem;
+}
+
+.section{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.section .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: #fff;
+    margin: 0 100px;
+}
+
+.vertical-desc{
+    position: relative;
+    top: 86px;
+    color: #FFF;
+    width: 150px;
+    font-size: 1.2rem;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container2 {
+	
+	max-width: 1170px;
+	margin: auto;
+}
+
+.footer-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer1 {
+	background: black;
+	padding: 70px 0;
+	position: relative;
+	line-height: 1.5;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 30px;
+	color: #F58F51;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #F58F51;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+
+.footer-col ul li {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 22px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color: #F58F51;
+	display: block;
+	transition: all 0.3s ease;
+
+}
+
+.footer-col ul li a:hover {
+	color: white;
+	padding-left: 5px;
+}
+
+.footer-col p {
+	color: #F58F51;
+	font-size: 16px;
+}
+
+.follow .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.follow .social-links a:hover {
+	color: #24262b;
+	background-color: white;
+}
+
+.last {
+	color: #F58F51;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+	.footer-col {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+
+
+
+
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    .header p {
+        font-size: 22px;
+    }
+
+    .header h3 {
+        font-size: 65px;
+        font-weight: 530;
+        margin-top: -51px;
+    }
+
+    .header .btn {
+        font-size: 19px;
+        margin-top: 35px;
+    }
+
+    .header .text-white {
+        margin-top: 186px;
+    }
+
+    .row {
+        justify-content: center;
+        margin: 1px auto;
+    }
+
+
+    h2 {
+        font-size: 60px;
+        font-weight: 500;
+        margin-top: 128px;
+        text-align: center;
+    }
+
+    .msg {
+        text-align: justify;
+        font-size: 1.3rem;
+        font-weight: 500;
+        position: relative;
+        padding: 0px 30px;
+    }
+
+  
+}
+
+/* tabs */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .row {
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 65px;
+    }
+
+    .msg {
+        text-align: center;
+        padding: 0px 42px;
+    }
+
+    .header p {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .header .btn {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .card{
+        width: 500px;
+    }
+
+    .btn-customers {
+        font-size: 18px;
+    }
+
+    .card-text{
+        font-size: 18px;
+    }
+}
+
+/* Media Query for larger screens (e.g., desktops) */
+@media only screen and (min-width: 1025px) {
+    .row {
+        justify-content: center;
+    }
+
+    .header p {
+        font-size: 29px;
+    } 
+
+     .header .btn {
+        font-size: 25px;
+        margin-top: 22px;
+    }
+}
+
+

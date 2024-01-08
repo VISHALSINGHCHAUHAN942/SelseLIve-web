@@ -20,27 +20,45 @@ document.addEventListener("DOMContentLoaded", function () {
         dropdownElement.style.display = dropdownElement.style.display === "none" ? "flex" : "none";
     }
 
-    hamburgerIcon.addEventListener("click", function () {
+    function toggleMenu() {
         // Toggle the display of the main navigation menu
         dropdownMenu.style.display = dropdownMenu.style.display === "none" ? "flex" : "none";
+
+        // Toggle the class to switch between hamburger and cross icons
+        hamburgerIcon.classList.toggle('open');
 
         // Hide dropdowns when main navigation is displayed
         [solutionsDropdown, customersDropdown, resourcesDropdown, platformDropdown, aboutDropdown].forEach(function (dropdown) {
             dropdown.style.display = "none";
         });
+    }
+
+    // Add a click event listener to the hamburger icon
+    hamburgerIcon.addEventListener('click', function () {
+        toggleMenu();
     });
 
     var dropdownToggle = document.getElementById("dropdownToggle");
 
     dropdownToggle.addEventListener("click", function () {
-        // Toggle the display of the main navigation menu
-        dropdownMenu.style.display = dropdownMenu.style.display === "none" ? "flex" : "none";
-
-        // Hide dropdowns when main navigation is displayed
-        [solutionsDropdown, customersDropdown, resourcesDropdown, platformDropdown, aboutDropdown].forEach(function (dropdown) {
-            dropdown.style.display = "none";
-        });
+        toggleMenu();
     });
+
+    // Check if the dropdown menu is initially visible and set the initial state
+    var isDropdownVisible = false;
+
+    // Event listener for the first click to open the dropdown and change the icon
+    hamburgerIcon.addEventListener('click', function () {
+        if (!isDropdownVisible) {
+            dropdownMenu.style.display = "flex";
+            isDropdownVisible = true;
+        } else {
+            dropdownMenu.style.display = "none";
+            isDropdownVisible = false;
+        }
+        hamburgerIcon.classList.toggle('open', isDropdownVisible);
+    });
+
 
     // Check the screen width and add/remove class for the Request a Demo button
     function checkScreenWidth() {
@@ -55,21 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
             dropdownMenu.style.display = "none";
         }
     }
-
-    // Assuming you have a function to toggle the dropdown
-function toggleDropdown() {
-    // Your existing code to toggle the dropdown goes here
-  
-    // Get the hamburger icon element
-    const hamburgerIcon = document.getElementById('hamburgerIcon');
-  
-    // Toggle the class to switch between hamburger and cross icons
-    hamburgerIcon.classList.toggle('open');
-  }
-  
-  // Add a click event listener to the hamburger icon
-  document.getElementById('hamburgerIcon').addEventListener('click', toggleDropdown);
-  
 
     // Check on page load
     checkScreenWidth();

@@ -5,7 +5,7 @@
 }
 
 body {
-  background: black;
+  background: #899878;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -22,17 +22,60 @@ body {
 
 .text-wrapper {
     max-width: 80%;
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 1.8rem;
     color: #FFF;
   }
 
-.btn {
+  
+.btn1 {
   background-color: #F58F51;
-  border-radius: 0.5rem;
-  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  color: white;
   font-weight: 700;
+  width: 10%;
+  height: 3rem;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
 }
+
+  .btn {
+    background-color: #F58F51;
+    border-radius: 0.5rem;
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    bottom: 2rem;
+}
+
+
+.btn2 {
+  background-color: #F58F51;
+  border-radius: 0.7rem;
+  color: white;
+  font-weight: 700;
+  height: 3rem;
+  width: 9rem;
+  line-height: 3rem; /* Set the line-height equal to the button height */
+      display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.btn3 {
+  background-color: #F58F51;
+  border-radius: 0.7rem;
+  color: white;
+  font-weight: 700;
+  height: 3rem;
+  width: 16rem;
+  line-height: 3rem; /* Set the line-height equal to the button height */
+      display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
 
 .connecting{
   text-align: justify;
@@ -113,8 +156,9 @@ body {
 
 .card-2 {
   /* background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%); */
-  background: black;
-  min-height: auto;
+  border-radius: 2rem;
+  background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%);
+  height: 23rem;
 
 }
 
@@ -144,7 +188,8 @@ body {
 }
 
 .card-3 {
-  background-color: black;
+  background-color:#899878;
+  border: none;
 }
 
 
@@ -244,14 +289,35 @@ ul{
 /*responsive*/
 @media(max-width: 767px)
 {
+
+  .landing-page {
+    background: url(../images/whitepaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -80px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
   .footer-col{
     width: 100%;
     margin-bottom: 30px;
 }
+
+.col {
+  margin-top: 80px;
+  flex: 1 0 0%;
+}
+
 }
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
+}
+.col {
+  margin-top: 80px;
+  flex: 1 0 0%;
 }
 }
 
@@ -270,6 +336,11 @@ ul{
     padding-right: 50px;
   }
 
+  .col {
+    margin-top: 80px;
+    flex: 1 0 0%;
+}
+
   .container-fluid-1 .right-part {
     padding-left: 30px;
     padding-top: 30px;
@@ -278,6 +349,12 @@ ul{
   .container-fluid-1 .left-part {
     padding-left: 30px;
   }
+
+  .pt-4 {
+    padding-top: 1.5rem!important;
+    padding: 1rem 1rem;
+    text-align: justify;
+}
 
   body {
     overflow-x: hidden;
