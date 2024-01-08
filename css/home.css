@@ -28,7 +28,6 @@ h1 {
   backdrop-filter: blur(50px);
   background: rgba(255, 246, 246, 0.15);
   border-radius: 0.7em;
-  
 }
 
 .card-text {
@@ -39,14 +38,13 @@ h1 {
   font-weight: 700;
 }
 
-.btn1 {
+.btn {
   background-color: #F58F51;
   border-radius: 0.5rem;
   color: black;
   font-weight: 700;
 }
-
-.btn {
+.btn-customer {
   background-color: #F58F51;
   border-radius: 0.5rem;
   color: black;
@@ -54,6 +52,8 @@ h1 {
   position: absolute;
   bottom: 2rem;
 }
+
+
 
 a {
   text-decoration: none;
@@ -178,6 +178,8 @@ a {
 
 
 
+<<<<<<< HEAD
+=======
 
 
 
