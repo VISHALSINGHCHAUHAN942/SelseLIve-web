@@ -553,13 +553,16 @@ body {
     font-weight: 700;
   }
 
+ 
+
+
   .card1 {
     position: relative;
     margin: 20px;
     border-radius: 20px;
     background: linear-gradient(180deg, black 4%, #4A4A4A 100%);
     margin: 10px;
-    height: 350px;
+    height: 400px;
     width: auto;
   }
 
@@ -571,17 +574,58 @@ body {
 .iotexperts{
  font-size: 24px;
  font-weight: 400;
- word-wrap: break-word
+ word-wrap: break-word;
+ color: black;
+
 }
 .whywork{
     color: black;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 50px;
+    position: relative;
+    left: 3%;
+}
+.whywork2 { 
+    color: #FFF;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    left: 3%;
+ 
+  
 }
 .geta{
-    color: black;
+    color: #000;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
 }
 
+.card1 .card-body .card-text .customer { 
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.card1 .card-body .card-text .Trusted { 
+    color: #FFF;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.container .lifeat { 
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 45px;
+    font-weight: 900;
+}
 
 
 
@@ -716,4 +760,112 @@ ul {
     .workwithus{
         font-size: 30px;
     }
+    .whywork2 {
+      width: 290px;
+        font-size: 12px;
+        position: relative;
+        left: 24px;
+    }
+
   }
+
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px) 
+  and (orientation: landscape) {
+    /* Your styles for landscape mode on mobile devices */
+    
+.iotexperts {
+    font-size: 10px;
+}
+
+.lyf {
+    width: 650px;
+}
+}
+
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) {
+    /* Your styles for tablets */
+  .lyf {
+    width: 700px;
+    position: relative;
+    left: 20px;
+  }
+
+  .container .lyf1   {
+    width: 400px;
+  }
+  
+  .container .lyf1 .lifeat {
+    position: relative;
+    left: 100px;
+    font-size: 65px;
+    width: 600px;
+  }
+
+  .container .lyf1 .geta {
+    width: 700px;
+    position: relative;
+    left: 20px;
+  }
+
+  .container .lyf1 .btn {
+    position: relative;
+    left: 300px;
+  }
+}
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: landscape) {
+    /* Your styles for tablets in landscape mode */
+   
+
+    .lyf {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        left: 20px;
+      }
+    
+      .container .lyf1   {
+        width: 400px;
+      }
+      
+      .container .lyf1 .lifeat {
+        position: relative;
+        left: 20px;
+        font-size: 45px;
+        text-align: left;
+        width: 400px;
+      }
+    
+      .container .lyf1 .geta {
+        width: 400px;
+        position: relative;
+        left: 20px;
+      }
+    
+      .container .lyf1 .btn {
+        position: relative;
+        left: 20px;
+      }
+
+      .card1 {
+        height: 440px;
+      }
+
+      .card1 .card-body .card-text .customer {
+        font-size: 24px;
+        margin-top: -10px;
+      }
+      .card1 .card-body .card-text .Trusted {
+        font-size: 20px;
+      }
+      
+}
