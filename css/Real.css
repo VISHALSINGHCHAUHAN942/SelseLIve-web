@@ -138,21 +138,23 @@
     order: 2; /* Change order to 2 to position on the right */
 }
 
-#hamburgerIcon.open {
+.navbar-toggler.open {
     background-color: transparent; /* Set background color to transparent or adjust as needed */
-  }
-  
-  #hamburgerIcon.open .bar:nth-child(1) {
+}
+
+.navbar-toggler.open .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 10px);
-  }
-  
-  #hamburgerIcon.open .bar:nth-child(2) {
+}
+
+.navbar-toggler.open .bar:nth-child(2) {
     opacity: 0;
-  }
-  
-  #hamburgerIcon.open .bar:nth-child(3) {
+}
+
+.navbar-toggler.open .bar:nth-child(3) {
     transform: rotate(45deg) translate(-8px, -12px);
-  }
+}
+
+
 
 /* Add this style for the Solutions mobile dropdown */
 #solutionsDropdown {
@@ -342,6 +344,22 @@
     .navbar-toggler {
         display: flex;
     }
+
+    .navbar-toggler.open {
+        background-color: transparent; /* Set background color to transparent or adjust as needed */
+    }
+    
+    .navbar-toggler.open .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 10px);
+    }
+    
+    .navbar-toggler.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .navbar-toggler.open .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-8px, -12px);
+    }
     
 
     /* Center the dropdown items in the middle */
@@ -355,7 +373,7 @@
     .dropdown-menu {
         display: none;
         flex-direction: column;
-        align-items: left;
+        align-items: flex-start;
         padding-left: 20px;
         position: absolute;
         top: 80px;
@@ -531,118 +549,110 @@
     }
 }
 
-/* Navbar Ends */
-body {
-  background: #899878;
-	font-family: 'Poppins', sans-serif;
-}
 
-.aboutus {
-    background: url('../images/about1\ 1.png');
-    background-size: cover;
-    background-position: center;
+
+.outer{
+   background-color:#899878;
+   width: 100%;
+   margin: 0 auto;
+}
+.container-fluid{
+    justify-content: space-between;
+}
+.mainhead{
+    color: #FFFEEA;
+text-align: center;
+font-family: Poppins;
+font-size: 70px;
+font-weight: 600;
+}
+.bg-image {
+    position: relative;
+    overflow: hidden;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-
+    background-size: cover;
+    background-position: center center;
+    margin-top: -80px;
 }
-.btn {
-    background-color: #F58F51;
-    border-radius: 0.5rem;
-    color: black;
-    font-weight: 700;
-  }
-
- 
-
-
-  .card1 {
-    position: relative;
-    margin: 20px;
-    border-radius: 20px;
-    background: linear-gradient(180deg, black 4%, #4A4A4A 100%);
-    margin: 10px;
-    height: 400px;
-    width: auto;
-  }
-
-.workwithus{
-    padding-top: 20%;
-    font-size: 50px;
-    font-weight: 700;
-}
-.iotexperts{
- font-size: 24px;
- font-weight: 400;
- word-wrap: break-word;
- color: black;
-
-}
-.whywork{
-    color: black;
-    font-weight: 700;
-    font-size: 50px;
-    position: relative;
-    left: 3%;
-}
-.whywork2 { 
+.content{
     color: #FFF;
-    text-align: justify;
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 400;
-    position: relative;
-    left: 3%;
- 
-  
+text-align: center;
+font-family: Poppins;
+font-size: 28px;
+font-weight: 40;
 }
-.geta{
+.btn{
+    border-radius: 21px;
+background: #F58F51;
+text-transform: none;
+color: #FFF;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 600;;
+border: none;
+}
+.heading1{
     color: #000;
-    text-align: justify;
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
+font-family: Poppins;
+font-size: 60px;
+font-weight:500;
+width:fit-content;
+margin-top: 3%;
+padding-left: 2%;
+}
+h1{
+    padding: 10px;
 }
 
-.card1 .card-body .card-text .customer { 
+.card{
+    border-radius: 61px;
+background: linear-gradient(223deg, #000 4.66%, #4A4A4A 81.95%);
+}
+.main-heading{
+    color: #FFFEEA;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+height: 50px;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+.sub-heading{
     color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 32px;
-    font-weight: 800;
+text-align: justify;
+font-family: Poppins;
+font-size: 15px;
+font-weight: 50;
 }
-
-.card1 .card-body .card-text .Trusted { 
+.img-fluid{
+border-radius: 61px;
+width: 100%;
+height:auto;
+}
+.endtext{
     color: #FFF;
-    text-align: justify;
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 300;
+text-align: justify;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 600;;
 }
-
-.container .lifeat { 
+.title{
     color: #FFF;
-    font-family: Poppins;
-    font-size: 45px;
-    font-weight: 900;
+text-align: justify;
+font-family: Poppins;
+font-size: 15px;
+font-weight: 50;
 }
 
-
-
-/* Footer */
 body {
-	font-family: 'Poppins', sans-serif;	
+	font-family: 'Poppins', sans-serif;
+	
 }
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-.footer1 {
-	background: black;
-	padding: 70px 0;
-	position: relative;
-	line-height: 1.5;
 }
 
 .container2 {
@@ -658,6 +668,15 @@ body {
 ul {
 	list-style: none;
 }
+
+.footer1 {
+	background: black;
+	padding: 70px 0;
+	position: relative;
+	line-height: 1.5;
+	
+}
+
 .footer-col {
 	width: 25%;
 	padding: 0 15px;
@@ -728,11 +747,10 @@ ul {
 
 .last {
 	color: #F58F51;
-	padding-top: 1%;
+	position: relative;
+	bottom: 0;
 	width: 100%;
 	text-align: center;	
-	position: absolute;
-	bottom: 0;
 }
 
 /*responsive*/
@@ -751,123 +769,116 @@ ul {
 
 
 
+/* Responsiveness */
 @media only screen and (max-width: 576px) {
-    img {
-      max-width: 100%;
-      height: auto;
+    /* Small screens */
+    .outer{
+        width:100%;
     }
-    .iotexperts{
+
+    .mainhead {
+        font-size: 48px;
+        font-weight:700;
+    }
+    .content{
         font-size: 20px;
+        font-weight: 400;
     }
-    .workwithus{
-        font-size: 30px;
+    .btn{
+        font-size: 10px;
+        font-weight: 600;
     }
-    .whywork2 {
-      width: 290px;
+    .heading1{
+        font-size: 25px;
+        font-weight:500;
+        position: relative;
+        left: 5%;
+    }
+    .card{
+        border-radius: 20px;
+    }
+    .main-heading{
+        font-size: 15px;
+        font-weight: 600;
+        margin-top:5px;
+        margin-bottom: 0%;
+    }
+    .sub-heading{
+        font-size: 8px;
+        font-weight: 500;
+    }
+    .img-fluid{
+        border-radius: 20px;
+        width: 300px;
+        height:200px;
+    }
+    .endtext{
+        font-size: 10px;
+        font-weight:600;
+    }
+    .title{
+        font-size: 5px;
+        font-weight:500;
+    }
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    /* Medium screens */
+    /* header{
+    
+    } */
+    .outer{
+        width:100%;
+    }
+    .mainhead {
+        font-size: 64px;
+        font-weight: 700;
+    }
+    .content{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .btn{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .heading1{
+        font-size: 40px;
+        font-weight:500;
+        position: relative;
+        left: 2%;
+    }
+    .card{
+        border-radius: 40px;
+    }
+    .main-heading{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .sub-heading{
+        font-size: 15px;
+        font-weight:500;
+    }
+    .img-fluid{
+        border-radius: 30px;
+        width: 400px;
+        height:300px;
+    }
+    .endtext{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .title{
         font-size: 12px;
-        position: relative;
-        left: 24px;
+        font-weight: 500;
     }
-
-  }
-
-
-  @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px) 
-  and (orientation: landscape) {
-    /* Your styles for landscape mode on mobile devices */
+    .footer-col{
+        width: 100%;
+    }
     
-.iotexperts {
-    font-size: 10px;
-}
-
-.lyf {
-    width: 650px;
-}
-}
-
-
-@media only screen 
-  and (min-width: 768px) 
-  and (max-width: 1024px) {
-    /* Your styles for tablets */
-  .lyf {
-    width: 700px;
-    position: relative;
-    left: 20px;
-  }
-
-  .container .lyf1   {
-    width: 400px;
-  }
-  
-  .container .lyf1 .lifeat {
-    position: relative;
-    left: 100px;
-    font-size: 65px;
-    width: 600px;
-  }
-
-  .container .lyf1 .geta {
-    width: 700px;
-    position: relative;
-    left: 20px;
-  }
-
-  .container .lyf1 .btn {
-    position: relative;
-    left: 300px;
-  }
-}
-
-@media only screen 
-  and (min-width: 768px) 
-  and (max-width: 1024px) 
-  and (orientation: landscape) {
-    /* Your styles for tablets in landscape mode */
-   
-
-    .lyf {
-        width: 500px;
-        height: 500px;
-        position: relative;
-        left: 20px;
-      }
-    
-      .container .lyf1   {
-        width: 400px;
-      }
-      
-      .container .lyf1 .lifeat {
-        position: relative;
-        left: 20px;
-        font-size: 45px;
-        text-align: left;
-        width: 400px;
-      }
-    
-      .container .lyf1 .geta {
-        width: 400px;
-        position: relative;
-        left: 20px;
-      }
-    
-      .container .lyf1 .btn {
-        position: relative;
-        left: 20px;
-      }
-
-      .card1 {
-        height: 440px;
-      }
-
-      .card1 .card-body .card-text .customer {
-        font-size: 24px;
-        margin-top: -10px;
-      }
-      .card1 .card-body .card-text .Trusted {
-        font-size: 20px;
-      }
-      
 }

@@ -4,12 +4,10 @@
 body {
   background: #899878;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
-h1 {
-  font-weight: 700;
-  color: black;
-}
+
 
 .landing-page {
   background: url('../images/home.png');
@@ -53,7 +51,21 @@ h1 {
   bottom: 25px;
 }
 
+.container-fluid-1 .container {
+  position: relative;
+  left: 80px;
+}
+.container .card-3 h1 { 
+  color: #000;
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 800;
+}
 
+.container   .learnmore {
+  position: relative;
+  top: 80px;
+}
 
 a {
   text-decoration: none;
@@ -101,7 +113,6 @@ a {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  overflow: hidden;
 }
 
 
@@ -174,7 +185,20 @@ a {
   margin-left: 50px;
 }
 
+.aboutus { 
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 800;
+}
 
+.aboutSenseLive { 
+  color: #000;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+}
 
 
 /* Small screens (phones) */
@@ -184,7 +208,117 @@ a {
     max-width: 300px;
   }
 
+  .container-fluid-1 {
+    position: relative;
+    left: -100px;
+  }
+
+  .container .card-3 h1 { 
+    font-size: 36px;
+    min-width: 350px;
+  }
+
+  .container .card-3 .connecting { 
+    min-width: 330px;
 }
+
+.imageh2 {
+  position: relative;
+  top: 50px;
+  width: 300px;
+}
+
+.lastlearn {
+  margin-top: 50px;
+ 
+}
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px) 
+  and (orientation: landscape) {
+    /* Your styles for landscape mode on mobile devices */
+   .container-fluid-1 {
+    position: relative;
+    left: -100px;
+   }
+   .imageh2 {
+    position: relative;
+    top: 65px;
+    left: 50px;
+   }
+
+   .container-fluid-iot {
+    position: relative;
+    top: 30px;
+   }
+
+   .lastlearn {
+    margin-top: 100px;
+   }
+}
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) {
+    /* Your styles for tablets */
+    .container-fluid-1 {
+      position: relative;
+      left: -80px;
+     }
+
+     .container-fluid-iot {
+      position: relative;
+      top: 30px;
+     }
+
+     .aboutus {
+      margin-left: 80px;
+     }
+
+     .aboutSenseLive {
+      margin-left: 80px;
+     }
+
+     .lastlearn {
+      margin-top: 100px;
+      margin-left: 80px;
+     }
+
+     .image {
+      margin-top: 80px;
+     }
+}
+
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: portrait) {
+    /* Your styles for tablets in portrait mode */
+    .aboutus {
+      position: relative;
+      left: -80px;
+    }
+
+    .aboutSenseLive {
+      position: relative;
+      left: -80px;
+    }
+
+    .lastlearn { 
+      position: relative;
+      left: -80px; 
+    }
+
+   img {
+    width: 700px;
+   }
+}
+
+
+
 
 .container-fluid-iot {
   background: url('../images/iot.png');
@@ -383,7 +517,5 @@ ul {
 
 /* Hide the Learn More button in mobile and tablet views */
 @media only screen and (max-width: 1400px) {
-  .learnmore {
-    display: none;
-  }
+ 
 }

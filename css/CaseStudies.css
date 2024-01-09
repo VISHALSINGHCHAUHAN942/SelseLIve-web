@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;500;700;800&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+.mainhead{
+    color: #FFFEEA;
+text-align: center;
+font-family: Poppins;
+font-size: 70px;
+font-weight: 600;
+}
+
+.content{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 28px;
+font-weight: 40;
+}
+
+.btn{
+    border-radius: 21px;
+background: #F58F51;
+text-transform: none;
+color: #FFF;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 600;;
+border: none;
+}
+
+.container-fluid{
+    background: #899878;
+}
+
+.card{
+    border-radius: 30px;
+    background: linear-gradient(223deg, #000 4.66%, #4A4A4A 81.95%);
+    position: relative;
+}
+
+
+.card-img-top{
+    border-radius: 30px 30px 0px 0px;
+}
+
+.card-title{
+    font-size: 28px;
+    font-weight: 800;
+    color: #F58F51;
+    text-align: justify;
+    margin-top: 2px;
+} 
+
+.card-text{
+    /* margin-left: 25px; */
+    color: #FFF;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    text-justify: distribute;
+}
+
+
+.imagecal {
+    margin-left: 17px; /* Adjust the margin as needed */
+    position: absolute;
+    margin-bottom: 14px;
+    bottom: 0; /* Align to the bottom of the card */
+    left: 0; /* Align to the left of the card */
+}
+
+.calendar {
+    font-size: 11px;
+    margin-top: 45px;
+    color: #FFF;
+    position: absolute;
+    bottom: 0; 
+    margin-left: 45px;
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .card-title{
+        font-size: 24px;
+        font-weight: 600;
+    } 
+    
+    .card-text{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px){
+    .card-title{
+        font-size: 26px;
+        font-weight: 500;
+    } 
+    
+    .card-text{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .mainhead {
+        font-size: 48px;
+        font-weight:700;
+    }
+    .content{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .btn{
+        font-size: 10px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .mainhead {
+        font-size: 64px;
+        font-weight: 700;
+    }
+    .content{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .btn{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+
+
