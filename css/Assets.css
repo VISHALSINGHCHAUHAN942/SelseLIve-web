@@ -14,9 +14,6 @@ font-family: Poppins;
 font-size: 70px;
 font-weight: 600;
 }
-h1{
-    padding: 10px;
-}
 .bg-image {
     position: relative;
     overflow: hidden;
@@ -50,6 +47,9 @@ font-weight:500;
 width:fit-content;
 margin-top: 3%;
 padding-left: 2%;
+}
+h1{
+    padding: 10px;
 }
 
 .card{
@@ -330,6 +330,3 @@ ul {
     }
     
 }
-
-
-
