@@ -56,7 +56,7 @@ body {
 
   .btn-customer {
     background-color: #F58F51;
-    width: 15rem;
+    width: 12rem;
     height: 3rem;
     color: #fff;
     border-radius: 2rem;
@@ -79,7 +79,7 @@ body {
   }
 
   .container{
-    padding: 2% 5%;
+    padding: 1% 5% 0% 5%;
   }
 
   .text-header1 {
@@ -100,9 +100,15 @@ body {
     align-items: center;
   }
 
-  .row{
+  .row1{
     margin: 0px;
     margin-top: 80px;;
+    justify-content: center;
+  }
+
+  .row{
+    margin: 0px;
+    margin-top: -30px;;
     justify-content: center;
   }
   
@@ -267,16 +273,69 @@ body {
     background: #000;
   }
 
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
 
   @media (max-width: 1100px) {
+
+    .container-fluid {
+      padding: 2% 5%;
+  }
+
+    .img-fluid {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: auto;
+  }
+
     .background{
       height: auto;
     }
+
+    p {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+  }
+
+    .row>* {
+      flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+      padding-right: calc(var(--bs-gutter-x) * .5);
+      padding-left: calc(var(--bs-gutter-x) * .5);
+      margin-top: 1rem;
+  }
 
   }
 
 /* Optional: Add media query for responsiveness */
 @media (max-width: 768px) {
+
+  .img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+  .row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: 1rem;
+}
 
   .background{
     height: auto;
@@ -300,13 +359,13 @@ body {
     }
 
     .container{
-      padding: 2% 22%;
+      padding: 2% 21%;
     }
   
 
     .btn-customers{
         height: 2rem;
-        width: 45%;
+        width: 10rem;
         line-height: 1rem; /* Set the line-height equal to the button height */
         display: inline-block;
         font-size: 0.6rem;
@@ -323,7 +382,7 @@ body {
     
 
     .text-header1{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: bold;
         color: #FFF;
     }
@@ -335,12 +394,15 @@ body {
   }
 
     .text-wrapper1 {
-      max-width: 80%;
+      max-width: 88%;
       margin-top: 20px;
       font-size: 0.6rem;
       color: #FFF;
   }
 
+  .mt-5 {
+    margin-top: 1.5rem!important;
+}
     .customer-card {
         flex-direction: column; /* Stack cards vertically on small screens */
     }
@@ -353,7 +415,7 @@ body {
         }
 
     .container-fluid {
-        padding: 0% 5%;
+        padding: 2% 5%;
     }
 
     .container-fluid-card {
@@ -399,7 +461,7 @@ body {
         height: 10rem;
     }
     .customer-card-fluid img {
-        width: 75%;
+        width: 10rem;
         height: 10rem;
     }
 
@@ -524,15 +586,48 @@ ul {
 
 /*responsive*/
 @media(max-width: 767px) {
+
+  .container-fluid {
+    padding: 2% 5%;
+}
+
+  .img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
 	.footer-col {
 		width: 100%;
 		margin-bottom: 30px;
 	}
+
+  .mt-5 {
+    margin-top: 1.5rem!important;
+}
 }
 
 @media(max-width: 574px) {
+  .container-fluid {
+    padding: 2% 5%;
+}
+
+  .img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
 	.footer-col {
 		width: 100%;
 	}
+
+  .mt-5 {
+    margin-top: 1.5rem!important;
+}
 }
 
