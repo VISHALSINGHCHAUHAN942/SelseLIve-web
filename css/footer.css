@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body {
-	font-family: 'Poppins', sans-serif;	
-}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;	
 }
 .footer1 {
 	background: black;
@@ -105,7 +103,14 @@ ul {
 }
 
 /*responsive*/
-@media(max-width: 767px) {
+@media(max-width: 768px) {
+	.footer-col {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 918px) {
 	.footer-col {
 		width: 100%;
 		margin-bottom: 30px;

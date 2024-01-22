@@ -21,8 +21,9 @@ body {
 }
 
 .card-1 {
-  margin-top: 10%;
-  max-width: 450px;
+  margin-top: 30%;
+  padding: 20px;
+  max-width: 500px;
   backdrop-filter: blur(50px);
   background: rgba(255, 246, 246, 0.15);
   border-radius: 0.7em;
@@ -36,20 +37,24 @@ body {
   font-weight: 700;
 }
 
+@media screen and (max-width: 320px) {
+  .card-text {
+   font-size: 1rem;
+  } 
+}
+@media screen and (max-width: 375px) {
+  .card-text {
+   font-size: 1.2rem;
+  } 
+}
+
 .btn {
   background-color: #F58F51;
   border-radius: 0.5rem;
-  color: black;
+  color: white;
   font-weight: 700;
 }
-.btn-customer {
-  background-color: #F58F51;
-  border-radius: 0.5rem;
-  color: black;
-  font-weight: 700;
-  position: absolute;
-  bottom: 25px;
-}
+
 
 .container-fluid-1 .container {
   position: relative;
@@ -62,10 +67,7 @@ body {
   font-weight: 800;
 }
 
-.container   .learnmore {
-  position: relative;
-  top: 80px;
-}
+
 
 a {
   text-decoration: none;
@@ -76,9 +78,6 @@ a {
   text-align: justify;
 }
 
-.aboutSenseLive {
-  text-align: justify;
-}
 
 .card1 {
   position: relative;
@@ -147,9 +146,8 @@ a {
 .card-2 {
   border-radius: 31px;
   background: linear-gradient(180deg, #000 3.74%, #4A4A4A 100%);
-  height: 350px;
   border: none;
-  min-height: 400px;
+  min-height: 380px;
 }
 
 .card-title2 {
@@ -157,8 +155,8 @@ a {
   color: #FFF;
   text-align: center;
   font-family: Poppins;
-  font-size: 25px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 
@@ -171,7 +169,7 @@ a {
   color: #FFF;
   text-align: center;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
 
 }
@@ -182,7 +180,6 @@ a {
 }
 .imageh2 img {
   border-radius: 10% 35% 35% 35%;
-  margin-left: 50px;
 }
 
 .aboutus { 
@@ -194,9 +191,8 @@ a {
 
 .aboutSenseLive { 
   color: #000;
+  font-size: 1rem;
   text-align: justify;
-  font-family: Poppins;
-  font-size: 14px;
   font-weight: 500;
 }
 
@@ -222,16 +218,6 @@ a {
     min-width: 330px;
 }
 
-.imageh2 {
-  position: relative;
-  top: 50px;
-  width: 300px;
-}
-
-.lastlearn {
-  margin-top: 50px;
- 
-}
 }
 
 @media only screen 
@@ -243,20 +229,13 @@ a {
     position: relative;
     left: -100px;
    }
-   .imageh2 {
-    position: relative;
-    top: 65px;
-    left: 50px;
-   }
+
 
    .container-fluid-iot {
     position: relative;
     top: 30px;
    }
 
-   .lastlearn {
-    margin-top: 100px;
-   }
 }
 
 @media only screen 
@@ -273,22 +252,6 @@ a {
       top: 30px;
      }
 
-     .aboutus {
-      margin-left: 80px;
-     }
-
-     .aboutSenseLive {
-      margin-left: 80px;
-     }
-
-     .lastlearn {
-      margin-top: 100px;
-      margin-left: 80px;
-     }
-
-     .image {
-      margin-top: 80px;
-     }
 }
 
 
@@ -297,20 +260,6 @@ a {
   and (max-width: 1024px) 
   and (orientation: portrait) {
     /* Your styles for tablets in portrait mode */
-    .aboutus {
-      position: relative;
-      left: -80px;
-    }
-
-    .aboutSenseLive {
-      position: relative;
-      left: -80px;
-    }
-
-    .lastlearn { 
-      position: relative;
-      left: -80px; 
-    }
 
    img {
     width: 700px;
@@ -331,16 +280,13 @@ a {
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body {
-	font-family: 'Poppins', sans-serif;
-	
-}
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+
+.footer1 {
+	background: black;
+	padding: 70px 0;
+	position: relative;
+	line-height: 1.5;
 }
 
 .container2 {
@@ -351,18 +297,6 @@ body {
 .footer-row {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-ul {
-	list-style: none;
-}
-
-.footer1 {
-	background: black;
-	padding: 70px 0;
-	position: relative;
-	line-height: 1.5;
-	
 }
 
 .footer-col {
@@ -390,11 +324,9 @@ ul {
 	width: 100px;
 }
 
-.footer-col ul li {
-	margin-bottom: 10px;
-}
 
-.footer-col ul li a {
+
+.a {
 	font-size: 22px;
 	text-transform: capitalize;
 	text-decoration: none;
@@ -443,7 +375,14 @@ ul {
 }
 
 /*responsive*/
-@media(max-width: 767px) {
+@media(max-width: 768px) {
+	.footer-col {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 918px) {
 	.footer-col {
 		width: 100%;
 		margin-bottom: 30px;
@@ -459,10 +398,10 @@ ul {
 
 
 
+
+
 @media only screen and (max-width: 576px) {
-  .whatsets .h1 {
-    font-size: 2rem;
-  }
+  
 
   .container-fluid-iot {
     background: url('../images/iot.png');
@@ -473,41 +412,21 @@ ul {
     width: 100%;
     overflow: hidden;
   }
-  .lastlearn{
-    padding-top: 40px;
-  }
 
   img {
     max-width: 100%;
   }
-  .imageh2{
-    padding-right: 50px;
-  }
+
 
   .container-fluid-1 {
     padding-right: 50px;
-  }
-
-  .container-fluid-1 .right-part1 {
-    padding-left: 30px;
-    padding-top: 30px;
-  }
-
-  .container-fluid-1 .left-part {
-    padding-left: 30px;
   }
 
   body {
     overflow-x: hidden;
   }
 
-  .container-fluid-aboutus .img-fluid {
-    padding-right: 20px;
-  }
 
-  .container-fluid-aboutus .text-left p {
-    width: 350px;
-  }
 
   .container .card2 {
     width: 300px;
