@@ -157,7 +157,7 @@ iframe{
     }
 
     .card-2{
-        width: 100%;
+        width: 90%;
         height: auto;
 
     }
@@ -194,7 +194,7 @@ iframe{
 
 
 
- @media (min-width: 768px) and (max-width: 991px) {
+ @media (min-width: 768px) and (max-width: 992px) {
     .card-1 .row {
         margin: 3px 25px;
     }
