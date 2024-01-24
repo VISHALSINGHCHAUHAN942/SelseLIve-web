@@ -7,8 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-
-
 .navbar {
   background: rgba(125, 125, 125, 0.15);
   opacity: 10px;
@@ -139,7 +137,7 @@ body {
 
 .dropdown-menu .nav-link2 a{
       text-decoration: none; 
-      color: white; 
+      color: white;
 }
 
 .dropdown-menu .nav-link1 a{
@@ -582,6 +580,9 @@ body {
   cursor: pointer;
   }
 }
+
+
+
 
 
 .landing-page {
