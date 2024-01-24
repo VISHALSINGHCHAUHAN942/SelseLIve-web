@@ -196,16 +196,21 @@ ul {
 
 
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 900px) {
     img {
       max-width: 100%;
       height: auto;
     }
     .iotexperts{
-        font-size: 20px;
+        font-size: 20px; 
+        position: relative;
+        top: 40px;
+        text-align: justify;
     }
     .workwithus{
         font-size: 30px;
+        position: relative;
+        top: 40px;
     }
     .whywork2 {
       width: 290px;
@@ -219,17 +224,16 @@ ul {
 
   @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 767px) 
+  and (max-device-width: 900px) 
   and (orientation: landscape) {
     /* Your styles for landscape mode on mobile devices */
     
 .iotexperts {
-    font-size: 10px;
+    font-size: 14px;
 }
 
-.lyf {
-    width: 650px;
-}
+
+
 }
 
 
@@ -316,3 +320,16 @@ ul {
       }
       
 }
+
+
+/* @media only screen and (max-width: 900px) and (orientation: landscape) {
+.iotexperts .txt {
+  font-size: 15px;
+}
+
+ .lifeat{
+  position: relative;
+  right: -10px;
+}
+
+} */

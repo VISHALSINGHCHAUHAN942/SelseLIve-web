@@ -26,7 +26,7 @@
     font-family: Poppins;
     font-size: 25px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
     background-color: #f58f51;
     border: 1px solid #f58f51;
@@ -97,12 +97,23 @@ body {
     line-height: normal;
 }
 
+.text-white h3 {
+    font-size: 60px;
+    position: relative;
+    top: -50px;
+}
+
+.text-white .para {
+    font-size: 20px;
+}
+
+
 
 h2 {
     color: #000;
     font-family: Poppins;
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: 155px;
     text-align: center;
 }
@@ -252,7 +263,7 @@ ul {
 }
 
 /* mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
     .header p {
         font-size: 22px;
     }
@@ -291,6 +302,13 @@ ul {
         font-weight: 500;
         position: relative;
         padding: 0px 30px;
+    }
+
+    .text-white h3 {
+        font-size: 50px;
+        position: relative;
+        top: -30px;
+        
     }
 
   
@@ -350,4 +368,23 @@ ul {
     }
 }
 
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .text-white h3 {
+        position: relative;
+        top: -50px;
+        font-size: 50px;
+    }
 
+    .text-white .para {
+        font-size: 12px;  
+        position: relative;
+        top: -50px;
+    }
+
+    .text-white .btn {
+        position: relative;
+        top: -40px;
+    }
+
+    
+ }
