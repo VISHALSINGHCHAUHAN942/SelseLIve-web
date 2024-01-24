@@ -22,9 +22,10 @@ body {
 
 .text-wrapper {
     max-width: 80%;
-    margin-top: 10%;
+    margin-top: 20%;
     font-size: 1.8rem;
     color: #FFF;
+    margin-right: 10%;
   }
 
   
@@ -38,6 +39,7 @@ body {
   text-decoration: none;
   text-align: center;
   justify-content: center;
+  text-decoration: none;
 }
 
   .btn {
@@ -58,22 +60,48 @@ body {
   height: 3rem;
   width: 9rem;
   line-height: 3rem; /* Set the line-height equal to the button height */
-      display: inline-block;
+  display: inline-block;
   text-decoration: none;
   font-size: 1.5rem;
+  border: none;
+  margin-right: 10%;
 }
 
 .btn3 {
   background-color: #F58F51;
   border-radius: 0.7rem;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   height: 3rem;
   width: 16rem;
   line-height: 3rem; /* Set the line-height equal to the button height */
       display: inline-block;
   text-decoration: none;
   font-size: 1.5rem;
+  border: none;
+}
+
+.btn4 {
+  background-color: #F58F51;
+  border-radius: 0.7rem;
+  color: white;
+  font-weight: 500;
+  height: 3rem;
+  width: 9rem;
+  line-height: 3rem; /* Set the line-height equal to the button height */
+      display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.aboutus {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.whatsets {
+  font-weight: 600;
 }
 
 
@@ -352,6 +380,18 @@ ul {
 
 
 @media only screen and (max-width: 576px) {
+
+  .text-wrapper {
+    font-size: 20px;
+    text-align: justify;
+    position: relative;
+    left: 10px;
+  }
+  .btn2 {
+    position: relative;
+    top: -40px;
+    left: 20px;
+  }
   .whatsets .h1 {
     font-size: 2rem;
   }
@@ -387,4 +427,22 @@ ul {
   body {
     overflow-x: hidden;
   }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+.text-wrapper {
+  font-size: 20px;
+  position: relative;
+  left: 30px;
+}
+.btn2 {
+position: relative;
+top: -30px;
+left: 40px;
+}
+
+.how {
+  position: relative;
+  top: 20px;
+}
 }

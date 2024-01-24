@@ -382,3 +382,20 @@ ul {
 }
 
 
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .mainhead {
+        font-size: 40px;
+        position: relative;
+        top: 40px;    
+    }
+
+    .content {
+        font-size: 14px;  
+        position: relative;
+        top: 10px;   
+    }
+    .req {
+        position: relative;
+        top: 20px;   
+    }
+}
