@@ -155,13 +155,11 @@ h2 {
 } */
 
 
-body {
-	font-family: 'Poppins', sans-serif;	
-}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;	
 }
 .footer1 {
 	background: black;
@@ -170,7 +168,7 @@ body {
 	line-height: 1.5;
 }
 
-.container2 {
+.container {
 	max-width: 1170px;
 	margin: auto;
 }
@@ -208,11 +206,8 @@ ul {
 	width: 100px;
 }
 
-.footer-col ul li {
-	margin-bottom: 10px;
-}
 
-.footer-col ul li a {
+.footer-col a {
 	font-size: 22px;
 	text-transform: capitalize;
 	text-decoration: none;
@@ -220,10 +215,11 @@ ul {
 	color: #F58F51;
 	display: block;
 	transition: all 0.3s ease;
+  margin-bottom: 10px;
 
 }
 
-.footer-col ul li a:hover {
+.footer-col a:hover {
 	color: white;
 	padding-left: 5px;
 }
@@ -231,24 +227,6 @@ ul {
 .footer-col p {
 	color: #F58F51;
 	font-size: 16px;
-}
-
-.follow .social-links a {
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255, 255, 255, 0.2);
-	margin: 0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-
-.follow .social-links a:hover {
-	color: #24262b;
-	background-color: white;
 }
 
 .last {
@@ -260,17 +238,16 @@ ul {
 	bottom: 0;
 }
 
-/*responsive*/
-@media(max-width: 767px) {
+@media(max-width: 911px) {
 	.footer-col {
-		width: 100%;
+		width: 50%;
 		margin-bottom: 30px;
 	}
 }
-
-@media(max-width: 574px) {
+@media(max-width: 600px) {
 	.footer-col {
 		width: 100%;
+		margin-bottom: 30px;
 	}
 }
 
